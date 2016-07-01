@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-06-23T06:35:27.142Z</updated>
+  <updated>2016-07-01T02:16:40.993Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -16,52 +16,59 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="http://icamille.github.io/2016/06/30/hello-world/"/>
-    <id>http://icamille.github.io/2016/06/30/hello-world/</id>
-    <published>2016-06-30T10:00:20.235Z</published>
-    <updated>2016-06-23T06:35:27.142Z</updated>
+    <title>Web前端设计原则</title>
+    <link href="http://icamille.github.io/2016/07/01/design-principles-of-web-front/"/>
+    <id>http://icamille.github.io/2016/07/01/design-principles-of-web-front/</id>
+    <published>2016-07-01T02:02:38.000Z</published>
+    <updated>2016-07-01T02:16:40.993Z</updated>
     
-    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on &lt;a href=&quot;https://github.com/hexojs/hexo/issues&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub&lt;/a&gt;.&lt;/p&gt;
-&lt;h2 id=&quot;Quick-Start&quot;&gt;&lt;a href=&quot;#Quick-Start&quot; class=&quot;headerlink&quot; title=&quot;Quick Start&quot;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&quot;Create-a-new-post&quot;&gt;&lt;a href=&quot;#Create-a-new-post&quot; class=&quot;headerlink&quot; title=&quot;Create a new post&quot;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo new &lt;span class=&quot;string&quot;&gt;&quot;My New Post&quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/writing.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Writing&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Run-server&quot;&gt;&lt;a href=&quot;#Run-server&quot; class=&quot;headerlink&quot; title=&quot;Run server&quot;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/server.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Server&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Generate-static-files&quot;&gt;&lt;a href=&quot;#Generate-static-files&quot; class=&quot;headerlink&quot; title=&quot;Generate static files&quot;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/generating.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Generating&lt;/a&gt;&lt;/p&gt;
-&lt;h3 id=&quot;Deploy-to-remote-sites&quot;&gt;&lt;a href=&quot;#Deploy-to-remote-sites&quot; class=&quot;headerlink&quot; title=&quot;Deploy to remote sites&quot;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
-&lt;p&gt;More info: &lt;a href=&quot;https://hexo.io/docs/deployment.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Deployment&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;给大家。&lt;/p&gt;
+&lt;p&gt;下面就是经验的前端指导原则：&lt;/p&gt;
+&lt;p&gt;设计原则是指导性原则，比较抽象，可扩展&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;KISS原则&lt;/li&gt;
+&lt;li&gt;DRY原则   &lt;/li&gt;
+&lt;li&gt;最少知道原则 &lt;/li&gt;
+&lt;li&gt;分治原则&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;KISS原则（Keep-it-Simple-and-Stupid）&quot;&gt;&lt;a href=&quot;#KISS原则（Keep-it-Simple-and-Stupid）&quot; class=&quot;headerlink&quot; title=&quot;KISS原则（Keep it Simple and Stupid）&quot;&gt;&lt;/a&gt;KISS原则（Keep it Simple and Stupid）&lt;/h2&gt;&lt;p&gt;一切尽可能简单！ 简单就是美，能简单的绝不复杂。&lt;/p&gt;
+&lt;h2 id=&quot;DRY原则（Don’t-Repeat-Yourself）&quot;&gt;&lt;a href=&quot;#DRY原则（Don’t-Repeat-Yourself）&quot; class=&quot;headerlink&quot; title=&quot;DRY原则（Don’t Repeat Yourself）&quot;&gt;&lt;/a&gt;DRY原则（Don’t Repeat Yourself）&lt;/h2&gt;&lt;p&gt;顾名思义，任何一段代码如果需要复制第三次，需要进行抽象。&lt;/p&gt;
+&lt;h2 id=&quot;最少知道原则。&quot;&gt;&lt;a href=&quot;#最少知道原则。&quot; class=&quot;headerlink&quot; title=&quot;最少知道原则。&quot;&gt;&lt;/a&gt;最少知道原则。&lt;/h2&gt;&lt;p&gt;高内聚，低耦合，任何事物应该保持对外界的最少知道原则。&lt;/p&gt;
+&lt;h2 id=&quot;分治原则&quot;&gt;&lt;a href=&quot;#分治原则&quot; class=&quot;headerlink&quot; title=&quot;分治原则&quot;&gt;&lt;/a&gt;分治原则&lt;/h2&gt;&lt;p&gt;复杂的问题，负责的功能，应该拆分，由更小的部分组成。&lt;/p&gt;
+&lt;p&gt;原文网址：&lt;a href=&quot;http://yanhaijing.com/web/2016/06/17/design-principles-of-web-front/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://yanhaijing.com/web/2016/06/17/design-principles-of-web-front/&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+      &lt;p&gt;最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享
     
     </summary>
     
+    
+      <category term="前端" scheme="http://icamille.github.io/tags/%E5%89%8D%E7%AB%AF/"/>
     
   </entry>
   
   <entry>
-    <title>my new post</title>
-    <link href="http://icamille.github.io/2016/06/28/my-new-post/"/>
-    <id>http://icamille.github.io/2016/06/28/my-new-post/</id>
-    <published>2016-06-28T03:29:58.000Z</published>
-    <updated>2016-06-28T06:12:50.390Z</updated>
+    <title>Hello World</title>
+    <link href="http://icamille.github.io/2016/06/23/hello-world/"/>
+    <id>http://icamille.github.io/2016/06/23/hello-world/</id>
+    <published>2016-06-23T06:35:27.142Z</published>
+    <updated>2016-07-01T02:41:56.915Z</updated>
     
-    <content type="html">&lt;p&gt;#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;，在&lt;!--more--&gt;之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。&lt;/p&gt;
+    <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://icamille.github.io/&quot;&gt;Camille Blog&lt;/a&gt;! This is my very first post.&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
+&lt;h2 id=&quot;Hello-Everyone&quot;&gt;&lt;a href=&quot;#Hello-Everyone&quot; class=&quot;headerlink&quot; title=&quot;Hello Everyone&quot;&gt;&lt;/a&gt;Hello Everyone&lt;/h2&gt;&lt;p&gt;欢迎大家来到我的博客，以后会和大家分享工作和生活方面的收获。作为自己一步一步搭起来的博客的第一篇文章，谨以此文记录下自己的“劳动成果”。嘿嘿……&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;../../../../css/images/read.jpg&quot; alt=&quot;Camille Blog&quot;&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上&lt;br&gt;
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://icamille.github.io/&quot;&gt;Camille Blog&lt;/a&gt;! This is my very first post.
     
     </summary>
     
-      <category term="blog" scheme="http://icamille.github.io/categories/blog/"/>
     
-    
-      <category term="文章" scheme="http://icamille.github.io/tags/%E6%96%87%E7%AB%A0/"/>
+      <category term="BLog" scheme="http://icamille.github.io/tags/BLog/"/>
     
   </entry>
   

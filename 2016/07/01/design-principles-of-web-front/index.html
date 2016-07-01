@@ -4,23 +4,23 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>my new post | camille Blog</title>
+    <title>Web前端设计原则 | camille Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="camille">
     
 
     
-    <meta name="description" content="#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上">
+    <meta name="description" content="最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享">
 <meta property="og:type" content="article">
-<meta property="og:title" content="my new post">
-<meta property="og:url" content="http://icamille.github.io/2016/06/28/my-new-post/index.html">
+<meta property="og:title" content="Web前端设计原则">
+<meta property="og:url" content="http://icamille.github.io/2016/07/01/design-principles-of-web-front/index.html">
 <meta property="og:site_name" content="camille Blog">
-<meta property="og:description" content="#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上">
-<meta property="og:updated_time" content="2016-06-28T06:12:50.390Z">
+<meta property="og:description" content="最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享">
+<meta property="og:updated_time" content="2016-07-01T02:16:40.993Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="my new post">
-<meta name="twitter:description" content="#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上">
+<meta name="twitter:title" content="Web前端设计原则">
+<meta name="twitter:description" content="最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享">
 
     
     <link rel="alternative" href="/atom.xml" title="camille Blog" type="application/atom+xml">
@@ -80,14 +80,14 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/06/28/my-new-post/" title="my new post" itemprop="url">my new post</a>
+      <a href="/2016/07/01/design-principles-of-web-front/" title="Web前端设计原则" itemprop="url">Web前端设计原则</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="camille" target="_blank" itemprop="author">camille</a>
 		
   <p class="article-time">
-    <time datetime="2016-06-28T03:29:58.000Z" itemprop="datePublished"> 发表于 2016-06-28</time>
+    <time datetime="2016-07-01T02:02:38.000Z" itemprop="datePublished"> 发表于 2016-07-01</time>
     
   </p>
 </header>
@@ -96,25 +96,33 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#KISS原则（Keep-it-Simple-and-Stupid）"><span class="toc-number">1.</span> <span class="toc-text">KISS原则（Keep it Simple and Stupid）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DRY原则（Don’t-Repeat-Yourself）"><span class="toc-number">2.</span> <span class="toc-text">DRY原则（Don’t Repeat Yourself）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最少知道原则。"><span class="toc-number">3.</span> <span class="toc-text">最少知道原则。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分治原则"><span class="toc-number">4.</span> <span class="toc-text">分治原则</span></a></li></ol>
 		
 		</div>
 		
-		<p>#这里是正文，用markdown写，你可以选择写一段显示在首页的简介后，加上<br><a id="more"></a>，在<!--more-->之前的内容会显示在首页，之后的内容会被隐藏，当游客点击Read more才能看到。</p>
+		<p>最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享<a id="more"></a>给大家。</p>
+<p>下面就是经验的前端指导原则：</p>
+<p>设计原则是指导性原则，比较抽象，可扩展</p>
+<ul>
+<li>KISS原则</li>
+<li>DRY原则   </li>
+<li>最少知道原则 </li>
+<li>分治原则</li>
+</ul>
+<h2 id="KISS原则（Keep-it-Simple-and-Stupid）"><a href="#KISS原则（Keep-it-Simple-and-Stupid）" class="headerlink" title="KISS原则（Keep it Simple and Stupid）"></a>KISS原则（Keep it Simple and Stupid）</h2><p>一切尽可能简单！ 简单就是美，能简单的绝不复杂。</p>
+<h2 id="DRY原则（Don’t-Repeat-Yourself）"><a href="#DRY原则（Don’t-Repeat-Yourself）" class="headerlink" title="DRY原则（Don’t Repeat Yourself）"></a>DRY原则（Don’t Repeat Yourself）</h2><p>顾名思义，任何一段代码如果需要复制第三次，需要进行抽象。</p>
+<h2 id="最少知道原则。"><a href="#最少知道原则。" class="headerlink" title="最少知道原则。"></a>最少知道原则。</h2><p>高内聚，低耦合，任何事物应该保持对外界的最少知道原则。</p>
+<h2 id="分治原则"><a href="#分治原则" class="headerlink" title="分治原则"></a>分治原则</h2><p>复杂的问题，负责的功能，应该拆分，由更小的部分组成。</p>
+<p>原文网址：<a href="http://yanhaijing.com/web/2016/06/17/design-principles-of-web-front/" target="_blank" rel="external">http://yanhaijing.com/web/2016/06/17/design-principles-of-web-front/</a></p>
   
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/blog/">blog</a>
-</div>
-
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/文章/">文章</a>
+  <span></span> <a href="/tags/前端/">前端</a>
   </div>
 
 </div>
@@ -123,7 +131,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://icamille.github.io/2016/06/28/my-new-post/" data-title="my new post | camille Blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://icamille.github.io/2016/07/01/design-principles-of-web-front/" data-title="Web前端设计原则 | camille Blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -136,20 +144,20 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/06/30/hello-world/" title="Hello World">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Hello World</span>
+
+<div class="next">
+<a href="/2016/06/23/hello-world/"  title="Hello World">
+ <strong>下一篇：</strong><br/> 
+ <span>Hello World
+</span>
 </a>
 </div>
-
 
 </nav>
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/06/28/my-new-post/" data-title="my new post" data-url="http://icamille.github.io/2016/06/28/my-new-post/"></div>
+	<div class="ds-thread" data-thread-key="2016/07/01/design-principles-of-web-front/" data-title="Web前端设计原则" data-url="http://icamille.github.io/2016/07/01/design-principles-of-web-front/"></div>
 </section>
 
 
@@ -159,7 +167,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- 
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#KISS原则（Keep-it-Simple-and-Stupid）"><span class="toc-number">1.</span> <span class="toc-text">KISS原则（Keep it Simple and Stupid）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DRY原则（Don’t-Repeat-Yourself）"><span class="toc-number">2.</span> <span class="toc-text">DRY原则（Don’t Repeat Yourself）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最少知道原则。"><span class="toc-number">3.</span> <span class="toc-text">最少知道原则。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分治原则"><span class="toc-number">4.</span> <span class="toc-text">分治原则</span></a></li></ol>
  
   </div>
 
@@ -183,8 +191,6 @@
 		<ul>
 		
 		  
-			<li><a href="/categories/blog/" title="blog">blog<sup>1</sup></a></li>
-		  
 		
 		</ul>
 </div>
@@ -196,7 +202,15 @@
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/文章/" title="文章">文章<sup>1</sup></a></li>
+				<li><a href="/tags/前端/" title="前端">前端<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/BLog/" title="BLog">BLog<sup>1</sup></a></li>
+			
+		
+			
+		
 			
 		
 		</ul>
@@ -209,7 +223,7 @@
         
           <li>
             
-            	<a href="http://www.ifuyun.com" target="_blank" title="爱生活，爱抚云">Fuyun&#39;s Blog</a>
+            	<a href="http://www.ifuyun.com" target="_blank" title="爱生活，爱抚云">抚云生活</a>
             
           </li>
         
