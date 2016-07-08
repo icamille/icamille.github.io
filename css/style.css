@@ -896,7 +896,7 @@ header nav ul li a:hover {
 }
 article header.article-info >h1 {
   padding: 0.2em 3%;
-  font-size: 100%;
+  font-size: 200%;
   line-height: 1.5;
   word-wrap: break-word;
   word-break: normal;
@@ -906,7 +906,7 @@ article header.article-info >h1 {
 }
 @media only screen and (min-width: 1024px) {
   article header.article-info >h1 {
-    font-size: 100%;
+    font-size: 170%;
     padding-top: 0.3em;
   }
 }
