@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-07-08T08:40:12.845Z</updated>
+  <updated>2016-07-08T14:46:57.027Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -20,16 +20,16 @@
     <link href="http://icamille.github.io/2016/07/08/zikongli/"/>
     <id>http://icamille.github.io/2016/07/08/zikongli/</id>
     <published>2016-07-08T02:02:38.000Z</published>
-    <updated>2016-07-08T08:40:12.845Z</updated>
+    <updated>2016-07-08T14:46:57.027Z</updated>
     
-    <content type="html">&lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第一周的最后一天，第一本书也已阅读完成。&lt;br&gt;本文主要是想通过思维导图的方式和大家分享美国著名健康心理学家凯利·麦格尼格尔博士的《自控力》一书。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第一周的最后一天，第一本书也已阅读完成。本文主要是想通过思维导图的方式和大家分享美国著名健康心理学家凯利·麦格尼格尔博士的《自控力》一书。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;下面分享给大家：&lt;br&gt; &lt;img src=&quot;../../../../css/images/zikongli-2016160708.jpg&quot; alt=&quot;《自控力》阅读笔记 -- 思维导图&quot;&gt;&lt;/p&gt;
 &lt;p&gt;每天成长一点，遇见更好的自己！&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第一周的最后一天，第一本书也已阅读完成。&lt;br&gt;本文主要是想通过思维导图的方式和大家分享美国著名健康心理学家凯利·麦格尼格尔博士的《自控力》一书。
+      &lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第一周的最后一天，第一本书也已阅读完成。本文主要是想通过思维导图的方式和大家分享美国著名健康心理学家凯利·麦格尼格尔博士的《自控力》一书。
     
     </summary>
     
@@ -79,11 +79,11 @@
     <link href="http://icamille.github.io/2016/07/01/design-principles-of-web-front/"/>
     <id>http://icamille.github.io/2016/07/01/design-principles-of-web-front/</id>
     <published>2016-07-01T02:02:38.000Z</published>
-    <updated>2016-07-08T07:35:11.903Z</updated>
+    <updated>2016-07-08T14:47:47.052Z</updated>
     
-    <content type="html">&lt;p&gt;最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;给大家。&lt;/p&gt;
+    <content type="html">&lt;p&gt;最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享给大家。&lt;/p&gt;
 &lt;p&gt;下面就是经验的前端指导原则：&lt;/p&gt;
-&lt;p&gt;设计原则是指导性原则，比较抽象，可扩展&lt;/p&gt;
+&lt;p&gt;设计原则是指导性原则，比较抽象，可扩展&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;KISS原则&lt;/li&gt;
 &lt;li&gt;DRY原则   &lt;/li&gt;
@@ -99,7 +99,9 @@
     
     <summary type="html">
     
-      &lt;p&gt;最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享
+      &lt;p&gt;最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享给大家。&lt;/p&gt;
+&lt;p&gt;下面就是经验的前端指导原则：&lt;/p&gt;
+&lt;p&gt;设计原则是指导性原则，比较抽象，可扩展
     
     </summary>
     
