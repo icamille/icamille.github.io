@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-07-08T14:46:57.027Z</updated>
+  <updated>2016-07-18T23:07:54.000Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -16,11 +16,36 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>《拖延心理学》阅读笔记</title>
+    <link href="http://icamille.github.io/2016/07/15/tyxlx/"/>
+    <id>http://icamille.github.io/2016/07/15/tyxlx/</id>
+    <published>2016-07-15T02:02:38.000Z</published>
+    <updated>2016-07-18T23:07:54.000Z</updated>
+    
+    <content type="html">&lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第二周的最后一天，第二本书已阅读完成。本文主要是想通过思维导图的方式和大家分享简·博克、莱诺拉·袁的《拖延心理学》一书。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下面分享给大家：&lt;br&gt; &lt;img src=&quot;../../../../css/images/tyxlx-2016160715.jpg&quot; alt=&quot;《拖延心理学》阅读笔记 -- 思维导图&quot;&gt;&lt;/p&gt;
+&lt;p&gt;每天成长一点，遇见更好的自己！&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第二周的最后一天，第二本书已阅读完成。本文主要是想通过思维导图的方式和大家分享简·博克、莱诺拉·袁的《拖延心理学》一书。
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://icamille.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="拖延心理学" scheme="http://icamille.github.io/tags/%E6%8B%96%E5%BB%B6%E5%BF%83%E7%90%86%E5%AD%A6/"/>
+    
+  </entry>
+  
+  <entry>
     <title>《自控力》阅读笔记</title>
     <link href="http://icamille.github.io/2016/07/08/zikongli/"/>
     <id>http://icamille.github.io/2016/07/08/zikongli/</id>
     <published>2016-07-08T02:02:38.000Z</published>
-    <updated>2016-07-08T14:46:57.027Z</updated>
+    <updated>2016-07-10T13:56:00.000Z</updated>
     
     <content type="html">&lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第一周的最后一天，第一本书也已阅读完成。本文主要是想通过思维导图的方式和大家分享美国著名健康心理学家凯利·麦格尼格尔博士的《自控力》一书。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;下面分享给大家：&lt;br&gt; &lt;img src=&quot;../../../../css/images/zikongli-2016160708.jpg&quot; alt=&quot;《自控力》阅读笔记 -- 思维导图&quot;&gt;&lt;/p&gt;
@@ -45,7 +70,7 @@
     <link href="http://icamille.github.io/2016/07/01/markdown-url/"/>
     <id>http://icamille.github.io/2016/07/01/markdown-url/</id>
     <published>2016-07-01T03:07:38.000Z</published>
-    <updated>2016-07-08T07:11:32.400Z</updated>
+    <updated>2016-07-10T13:56:00.000Z</updated>
     
     <content type="html">&lt;p&gt;在搭建&lt;a href=&quot;http://icamille.github.com&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;个人网站&lt;/a&gt;过程中，第一次接触到&lt;a href=&quot;http://baike.baidu.com/link?url=DnJkoGHc2tc3-TaQAthv-zFbrYi9YkL9pw1313M2z7-Ro7Mhx9gO6rjnZAzrF9LdXP0kcAMI0CtmYwYUZq0SDa&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Markdowm&lt;/a&gt;，需要学习Markdown的相关语法，下面是一些学习资源的相关链接。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt; &lt;/p&gt;
 &lt;h2 id=&quot;Markdown学习资源&quot;&gt;&lt;a href=&quot;#Markdown学习资源&quot; class=&quot;headerlink&quot; title=&quot;Markdown学习资源&quot;&gt;&lt;/a&gt;Markdown学习资源&lt;/h2&gt;&lt;ul&gt;
@@ -79,7 +104,7 @@
     <link href="http://icamille.github.io/2016/07/01/design-principles-of-web-front/"/>
     <id>http://icamille.github.io/2016/07/01/design-principles-of-web-front/</id>
     <published>2016-07-01T02:02:38.000Z</published>
-    <updated>2016-07-08T14:47:47.052Z</updated>
+    <updated>2016-07-10T13:56:00.000Z</updated>
     
     <content type="html">&lt;p&gt;最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享给大家。&lt;/p&gt;
 &lt;p&gt;下面就是经验的前端指导原则：&lt;/p&gt;
@@ -117,7 +142,7 @@
     <link href="http://icamille.github.io/2016/06/23/hello-world/"/>
     <id>http://icamille.github.io/2016/06/23/hello-world/</id>
     <published>2016-06-23T02:02:38.000Z</published>
-    <updated>2016-07-08T14:38:25.942Z</updated>
+    <updated>2016-07-10T13:56:00.000Z</updated>
     
     <content type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://icamille.github.io/&quot;&gt;Camille Blog&lt;/a&gt;! This is my very first post.&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;  &lt;/p&gt;
 &lt;h2 id=&quot;Hello-Everyone&quot;&gt;&lt;a href=&quot;#Hello-Everyone&quot; class=&quot;headerlink&quot; title=&quot;Hello Everyone&quot;&gt;&lt;/a&gt;Hello Everyone&lt;/h2&gt;&lt;p&gt;欢迎大家来到我的博客，以后会和大家分享工作和生活方面的收获。作为自己一步一步搭起来的博客的第一篇文章，谨以此文记录下自己的“劳动成果”。&lt;!--more--&gt;  嘿嘿……&lt;/p&gt;
