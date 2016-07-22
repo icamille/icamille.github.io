@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-07-18T23:07:54.000Z</updated>
+  <updated>2016-07-22T03:22:06.000Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -14,6 +14,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>《精进》阅读笔记</title>
+    <link href="http://icamille.github.io/2016/07/22/jingjin/"/>
+    <id>http://icamille.github.io/2016/07/22/jingjin/</id>
+    <published>2016-07-22T04:22:38.000Z</published>
+    <updated>2016-07-22T03:22:06.000Z</updated>
+    
+    <content type="html">&lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第三周的最后一天，第三本书已阅读完成。本文主要是想通过思维导图的方式和大家分享知乎大神采铜的《精进：如何成为一个很厉害的人》一书。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下面分享给大家：&lt;br&gt; &lt;img src=&quot;../../../../css/images/jingjin-2016160722.jpg&quot; alt=&quot;《精进》阅读笔记 -- 思维导图&quot;&gt;&lt;/p&gt;
+&lt;p&gt;每天成长一点，遇见更好的自己！&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第三周的最后一天，第三本书已阅读完成。本文主要是想通过思维导图的方式和大家分享知乎大神采铜的《精进：如何成为一个很厉害的人》一书。
+    
+    </summary>
+    
+      <category term="读书笔记" scheme="http://icamille.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
+    
+    
+      <category term="提升自我" scheme="http://icamille.github.io/tags/%E6%8F%90%E5%8D%87%E8%87%AA%E6%88%91/"/>
+    
+  </entry>
   
   <entry>
     <title>《拖延心理学》阅读笔记</title>
@@ -37,31 +62,6 @@
     
     
       <category term="拖延心理学" scheme="http://icamille.github.io/tags/%E6%8B%96%E5%BB%B6%E5%BF%83%E7%90%86%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>《精进》阅读笔记</title>
-    <link href="http://icamille.github.io/2016/07/15/jingjin/"/>
-    <id>http://icamille.github.io/2016/07/15/jingjin/</id>
-    <published>2016-07-15T02:02:38.000Z</published>
-    <updated>2016-07-22T03:19:44.000Z</updated>
-    
-    <content type="html">&lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第三周的最后一天，第三本书已阅读完成。本文主要是想通过思维导图的方式和大家分享知乎大神采铜的《精进：如何成为一个很厉害的人》一书。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;下面分享给大家：&lt;br&gt; &lt;img src=&quot;../../../../css/images/jingjin-2016160722.jpg&quot; alt=&quot;《精进》阅读笔记 -- 思维导图&quot;&gt;&lt;/p&gt;
-&lt;p&gt;每天成长一点，遇见更好的自己！&lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt;最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天恰好是第三周的最后一天，第三本书已阅读完成。本文主要是想通过思维导图的方式和大家分享知乎大神采铜的《精进：如何成为一个很厉害的人》一书。
-    
-    </summary>
-    
-      <category term="读书笔记" scheme="http://icamille.github.io/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/"/>
-    
-    
-      <category term="提升自我" scheme="http://icamille.github.io/tags/%E6%8F%90%E5%8D%87%E8%87%AA%E6%88%91/"/>
     
   </entry>
   
