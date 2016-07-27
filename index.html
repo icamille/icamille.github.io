@@ -85,6 +85,118 @@
         <!--<header class="article-info clearfix">
   <h1 itemprop="name">
     
+      <a href="/2016/07/27/ahout-tofixed/" title="toFixed引发的思考" itemprop="url">toFixed引发的思考</a>
+  </h1>
+  <p class="article-author">By
+       
+		<a href="/about" title="camille" target="_blank" itemprop="author">camille</a>
+		
+  </p>
+  <p class="article-time">
+    <time datetime="2016-07-26T23:02:38.000Z" itemprop="datePublished"> 发表于 2016-07-27</time>
+  </p>
+</header>-->
+
+        <header class="article-info clearfix">
+            <h1 itemprop="name">
+                
+                <a href="/2016/07/27/ahout-tofixed/" title="toFixed引发的思考" itemprop="url">toFixed引发的思考</a>
+            </h1>
+        </header>
+
+    <div class="article-content">
+        
+        <p>###问题描述</p>
+<p>在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？</p>
+<p><strong>先看结果：</strong></p>
+<pre><code>var a = Math.random();  
+console.log(a);  
+console.log(a.toFixed(4));  
+console.log(a.toFixed(4) * 100);  
+console.log((a * 100).toFixed(2));
+</code></pre><p><strong>输出1：</strong></p>
+<pre><code>0.8988301526666329  
+0.8988  
+89.88000000000001
+89.88
+</code></pre><p><strong>输出2：</strong></p>
+<pre><code>0.413465264585297  
+0.4135  
+41.349999999999994  
+41.35
+</code></pre><p><strong>输出3：</strong></p>
+<pre><code>0.1348901139915517
+0.1349
+13.489999999999998
+13.49
+</code></pre><p><strong>输出4：</strong></p>
+<pre><code>0.2731272622047103  
+0.2731  
+27.310000000000002  
+27.31  
+</code></pre><p>  可以看出，两种调用顺序的执行结果并不一致，前者甚至没有达到预期的保留2位小数。该如何解释并解决呢？ </p>
+<p>  回到JS对浮点数的处理，JS仅有Number数值类型，而Number采用的是IEEE-754 64位双精度浮点数编码。其具有以下特点：</p>
+<ol>
+<li>浮点数可表示的值范围比同等位数的整数表示方式的值范围要大得多；</li>
+<li>浮点数无法精确表示其值范围内的所有数值，而有符号和无符号整数则是精确表示其值范围内的每个数值；</li>
+<li>浮点数只能精确表示m*2e的数值；</li>
+<li>当biased-exponent为2e-1-1时，浮点数能精确表示该范围内的各整数值；</li>
+<li>当biased-exponent不为2e-1-1时，浮点数不能精确表示该范围内的各整数值。</li>
+</ol>
+<p>由此可知，部分数值并不能精确表示，最终在运算结果中导致了偏差。</p>
+<p>对以上问题的分析，详见：<a href="https://segmentfault.com/a/1190000005022170" target="_blank" rel="external">Why 0.1 + 0.2 === 0.30000000000000004?</a>。其中也给出了几个解决的方案，可以作为问题的补充。</p>
+<p>而对于本问题的解决，将toFixed调用放至最后即可。</p>
+<p>###总结</p>
+<ol>
+<li>调用顺序很重要！</li>
+<li>异常测试很重要，尤其对于条件特殊值的非边界情况（如特定的随机数）。</li>
+</ol>
+
+        
+        
+        <p class="article-more-link">
+          
+       </p>
+    </div>
+    <footer class="article-footer clearfix">
+<div class="article-catetags">
+
+<div class="article-categories">
+  <span></span>
+  <a class="article-category-link" href="/categories/技术/">技术</a>
+</div>
+
+
+  <div class="article-tags">
+  
+  <span></span> <a href="/tags/JavaScript/">JavaScript</a>
+  </div>
+
+</div>
+
+
+
+
+<div class="comments-count">
+	<time datetime="2016-07-26T23:02:38.000Z" itemprop="datePublished"> 发表于 2016-07-27</time>
+</div>
+
+</footer>
+
+
+    </article>
+
+
+
+
+
+
+   
+    
+    <article class="post-expand post" itemprop="articleBody"> 
+        <!--<header class="article-info clearfix">
+  <h1 itemprop="name">
+    
       <a href="/2016/07/22/jingjin/" title="《精进》阅读笔记" itemprop="url">《精进》阅读笔记</a>
   </h1>
   <p class="article-author">By
@@ -523,7 +635,7 @@
 		  
 		
 		  
-			<li><a href="/categories/技术/" title="技术">技术<sup>2</sup></a></li>
+			<li><a href="/categories/技术/" title="技术">技术<sup>3</sup></a></li>
 		  
 		
 		  
@@ -544,15 +656,7 @@
 			
 		
 			
-				<li><a href="/tags/设计原则/" title="设计原则">设计原则<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/拖延心理学/" title="拖延心理学">拖延心理学<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Markdown/" title="Markdown">Markdown<sup>1</sup></a></li>
+				<li><a href="/tags/自控力/" title="自控力">自控力<sup>1</sup></a></li>
 			
 		
 			
@@ -560,7 +664,19 @@
 			
 		
 			
-				<li><a href="/tags/自控力/" title="自控力">自控力<sup>1</sup></a></li>
+				<li><a href="/tags/Markdown/" title="Markdown">Markdown<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/拖延心理学/" title="拖延心理学">拖延心理学<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/设计原则/" title="设计原则">设计原则<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/JavaScript/" title="JavaScript">JavaScript<sup>1</sup></a></li>
 			
 		
 		</ul>
