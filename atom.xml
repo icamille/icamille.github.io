@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-07-27T01:54:20.000Z</updated>
+  <updated>2016-07-27T16:12:36.000Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -17,10 +17,10 @@
   
   <entry>
     <title>toFixed引发的思考</title>
-    <link href="http://icamille.github.io/2016/07/27/ahout-tofixed/"/>
-    <id>http://icamille.github.io/2016/07/27/ahout-tofixed/</id>
+    <link href="http://icamille.github.io/2016/07/27/about-tofixed/"/>
+    <id>http://icamille.github.io/2016/07/27/about-tofixed/</id>
     <published>2016-07-26T23:02:38.000Z</published>
-    <updated>2016-07-27T01:54:20.000Z</updated>
+    <updated>2016-07-27T16:12:36.000Z</updated>
     
     <content type="html">&lt;p&gt;在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;先看结果：&lt;/strong&gt;&lt;/p&gt;
@@ -67,8 +67,8 @@ console.log((a * 100).toFixed(2));
 &lt;li&gt;异常测试很重要，尤其对于条件特殊值的非边界情况（如特定的随机数）。     &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;p&gt;&lt;strong&gt;本文（当然）是从&lt;a href=&quot;http://www.ifuyun.com/post/20ce98be3cbcd989&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;I,Fuyun&lt;/a&gt;偷来的，你们可以去告状了： &lt;/strong&gt;&lt;br&gt; &lt;img src=&quot;../../../../css/images/to-fixed.jpg&quot; alt=&quot;I,Fuyun&quot;&gt;  &lt;/p&gt;
-&lt;p&gt; 网址：&lt;a href=&quot;http://www.ifuyun.com/post/20ce98be3cbcd989&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ifuyun.com/post/20ce98be3cbcd989&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;本文（当然）是从&lt;a href=&quot;http://www.ifuyun.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;抚云生活&lt;/a&gt;偷来的，你们可以去告状了： &lt;/strong&gt;&lt;br&gt; &lt;img src=&quot;../../../../css/images/to-fixed.jpg&quot; alt=&quot;I,Fuyun&quot;&gt;  &lt;/p&gt;
+&lt;p&gt; 网址：&lt;a href=&quot;http://www.ifuyun.com/post/20ce98be3cbcd989&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;toFixed引发的思考&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
