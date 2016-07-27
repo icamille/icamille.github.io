@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-07-27T01:28:20.000Z</updated>
+  <updated>2016-07-27T01:43:04.000Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -20,10 +20,9 @@
     <link href="http://icamille.github.io/2016/07/27/ahout-tofixed/"/>
     <id>http://icamille.github.io/2016/07/27/ahout-tofixed/</id>
     <published>2016-07-26T23:02:38.000Z</published>
-    <updated>2016-07-27T01:28:20.000Z</updated>
+    <updated>2016-07-27T01:43:04.000Z</updated>
     
-    <content type="html">&lt;p&gt;###问题描述&lt;/p&gt;
-&lt;p&gt;在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？&lt;/p&gt;
+    <content type="html">&lt;h3 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h3&gt;&lt;p&gt;在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;先看结果：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;var a = Math.random();  
 console.log(a);  
@@ -65,15 +64,16 @@ console.log((a * 100).toFixed(2));
 &lt;p&gt;###总结&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;调用顺序很重要！&lt;/li&gt;
-&lt;li&gt;异常测试很重要，尤其对于条件特殊值的非边界情况（如特定的随机数）。&lt;/li&gt;
+&lt;li&gt;异常测试很重要，尤其对于条件特殊值的非边界情况（如特定的随机数）。     &lt;/li&gt;
 &lt;/ol&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;本文（当然）是从&lt;a href=&quot;http://www.ifuyun.com/post/20ce98be3cbcd989&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;I,Fuyun&lt;/a&gt;偷来的，你们可以去告状了： &lt;/strong&gt;&lt;br&gt; &lt;img src=&quot;../../../../css/images/to-fixed.jpg&quot; alt=&quot;I,Fuyun&quot;&gt;  &lt;/p&gt;
+&lt;p&gt; 网址：&lt;a href=&quot;http://www.ifuyun.com/post/20ce98be3cbcd989&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://www.ifuyun.com/post/20ce98be3cbcd989&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
-      &lt;p&gt;###问题描述&lt;/p&gt;
-&lt;p&gt;在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;先看结果：&lt;/strong&gt;&lt;/
+      &lt;h3 id=&quot;问题描述&quot;&gt;&lt;a href=&quot;#问题描述&quot; class=&quot;headerlink&quot; title=&quot;问题描述&quot;&gt;&lt;/a&gt;问题描述&lt;/h3&gt;&lt;p&gt;在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？
     
     </summary>
     
@@ -198,11 +198,11 @@ console.log((a * 100).toFixed(2));
     <link href="http://icamille.github.io/2016/07/01/design-principles-of-web-front/"/>
     <id>http://icamille.github.io/2016/07/01/design-principles-of-web-front/</id>
     <published>2016-07-01T02:02:38.000Z</published>
-    <updated>2016-07-10T13:56:00.000Z</updated>
+    <updated>2016-07-27T01:43:02.000Z</updated>
     
     <content type="html">&lt;p&gt;最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享给大家。&lt;/p&gt;
-&lt;p&gt;下面就是经验的前端指导原则：&lt;/p&gt;
-&lt;p&gt;设计原则是指导性原则，比较抽象，可扩展&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;下面就是经验的前端指导原则：&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;设计原则是指导性原则，比较抽象，可扩展&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;KISS原则&lt;/li&gt;
 &lt;li&gt;DRY原则   &lt;/li&gt;
@@ -213,14 +213,14 @@ console.log((a * 100).toFixed(2));
 &lt;h2 id=&quot;DRY原则（Don’t-Repeat-Yourself）&quot;&gt;&lt;a href=&quot;#DRY原则（Don’t-Repeat-Yourself）&quot; class=&quot;headerlink&quot; title=&quot;DRY原则（Don’t Repeat Yourself）&quot;&gt;&lt;/a&gt;DRY原则（Don’t Repeat Yourself）&lt;/h2&gt;&lt;p&gt;顾名思义，任何一段代码如果需要复制第三次，需要进行抽象。&lt;/p&gt;
 &lt;h2 id=&quot;最少知道原则。&quot;&gt;&lt;a href=&quot;#最少知道原则。&quot; class=&quot;headerlink&quot; title=&quot;最少知道原则。&quot;&gt;&lt;/a&gt;最少知道原则。&lt;/h2&gt;&lt;p&gt;高内聚，低耦合，任何事物应该保持对外界的最少知道原则。&lt;/p&gt;
 &lt;h2 id=&quot;分治原则&quot;&gt;&lt;a href=&quot;#分治原则&quot; class=&quot;headerlink&quot; title=&quot;分治原则&quot;&gt;&lt;/a&gt;分治原则&lt;/h2&gt;&lt;p&gt;复杂的问题，负责的功能，应该拆分，由更小的部分组成。&lt;/p&gt;
+&lt;hr&gt;
 &lt;p&gt;原文网址：&lt;a href=&quot;http://yanhaijing.com/web/2016/06/17/design-principles-of-web-front/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;http://yanhaijing.com/web/2016/06/17/design-principles-of-web-front/&lt;/a&gt;&lt;/p&gt;
 </content>
     
     <summary type="html">
     
       &lt;p&gt;最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享给大家。&lt;/p&gt;
-&lt;p&gt;下面就是经验的前端指导原则：&lt;/p&gt;
-&lt;p&gt;设计原则是指导性原则，比较抽象，可扩展
+&lt;p&gt;下面就是经验的前端指导原则：
     
     </summary>
     
