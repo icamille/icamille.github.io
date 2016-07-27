@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-07-27T01:50:04.000Z</updated>
+  <updated>2016-07-27T01:54:20.000Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -16,15 +16,13 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
+    <title>toFixed引发的思考</title>
     <link href="http://icamille.github.io/2016/07/27/ahout-tofixed/"/>
     <id>http://icamille.github.io/2016/07/27/ahout-tofixed/</id>
-    <published>2016-07-27T01:28:18.150Z</published>
-    <updated>2016-07-27T01:50:04.000Z</updated>
+    <published>2016-07-26T23:02:38.000Z</published>
+    <updated>2016-07-27T01:54:20.000Z</updated>
     
-    <content type="html">&lt;hr&gt;
-&lt;p&gt;title: toFixed引发的思考&lt;br&gt;date: 2016-07-27 07:02:38&lt;br&gt;tags: JavaScript&lt;/p&gt;
-&lt;h2 id=&quot;categories-技术&quot;&gt;&lt;a href=&quot;#categories-技术&quot; class=&quot;headerlink&quot; title=&quot;categories: 技术&quot;&gt;&lt;/a&gt;categories: 技术&lt;/h2&gt;&lt;p&gt;在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+    <content type="html">&lt;p&gt;在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;先看结果：&lt;/strong&gt;&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;var a = Math.random();  
 console.log(a);  
@@ -75,12 +73,14 @@ console.log((a * 100).toFixed(2));
     
     <summary type="html">
     
-      &lt;hr&gt;
-&lt;p&gt;title: toFixed引发的思考&lt;br&gt;date: 2016-07-27 07:02:38&lt;br&gt;tags: JavaScript&lt;/p&gt;
-&lt;h2 id=&quot;categories-技术&quot;&gt;&lt;a href=&quot;#categories-技术&quot; class=&quot;headerlink&quot; title=&quot;categories: 技术&quot;&gt;&lt;/a&gt;categories: 技术&lt;/h2&gt;&lt;p&gt;在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？
+      &lt;p&gt;在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？
     
     </summary>
     
+      <category term="技术" scheme="http://icamille.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="JavaScript" scheme="http://icamille.github.io/tags/JavaScript/"/>
     
   </entry>
   
