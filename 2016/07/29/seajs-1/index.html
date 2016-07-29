@@ -4,25 +4,37 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Hello World | camille&#39;s Blog</title>
+    <title>camille&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="camille">
     
 
     
-    <meta name="description" content="Welcome to Camille Blog! This is my very first post.">
+    <meta name="description" content="简单易用Seajs  
+背景一个网站必然会涉及很多功能，tab选项卡、slide轮播图、pop弹出层、美化alert、paging分页等等等等，如果是企业网站那整合成一个js文件就够了，即 插件库 。 
+但是对于一个大的网站平台来说需要的功能可能会有很多，而且随着平台的发展，功能会越来越多。到最后会发展成怎样的情况呢？
+   
+这是 钱庄网 原先的插件库，已经接近20个插件了。想象一下，你在做一个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://icamille.github.io/2016/06/23/hello-world/index.html">
+<meta property="og:title" content="camille's Blog">
+<meta property="og:url" content="http://icamille.github.io/2016/07/29/seajs-1/index.html">
 <meta property="og:site_name" content="camille's Blog">
-<meta property="og:description" content="Welcome to Camille Blog! This is my very first post.">
-<meta property="og:image" content="http://icamille.github.io/../../../../css/images/read.jpg">
-<meta property="og:updated_time" content="2016-07-10T13:56:00.000Z">
+<meta property="og:description" content="简单易用Seajs  
+背景一个网站必然会涉及很多功能，tab选项卡、slide轮播图、pop弹出层、美化alert、paging分页等等等等，如果是企业网站那整合成一个js文件就够了，即 插件库 。 
+但是对于一个大的网站平台来说需要的功能可能会有很多，而且随着平台的发展，功能会越来越多。到最后会发展成怎样的情况呢？
+   
+这是 钱庄网 原先的插件库，已经接近20个插件了。想象一下，你在做一个">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/seajs-example.png">
+<meta property="og:updated_time" content="2016-07-28T23:01:06.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Camille Blog! This is my very first post.">
-<meta name="twitter:image" content="http://icamille.github.io/../../../../css/images/read.jpg">
+<meta name="twitter:title" content="camille's Blog">
+<meta name="twitter:description" content="简单易用Seajs  
+背景一个网站必然会涉及很多功能，tab选项卡、slide轮播图、pop弹出层、美化alert、paging分页等等等等，如果是企业网站那整合成一个js文件就够了，即 插件库 。 
+但是对于一个大的网站平台来说需要的功能可能会有很多，而且随着平台的发展，功能会越来越多。到最后会发展成怎样的情况呢？
+   
+这是 钱庄网 原先的插件库，已经接近20个插件了。想象一下，你在做一个">
+<meta name="twitter:image" content="http://icamille.github.io/../../../../css/images/seajs-example.png">
 
     
     <link rel="alternative" href="/atom.xml" title="camille&#39;s Blog" type="application/atom+xml">
@@ -86,7 +98,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/06/23/hello-world/" title="Hello World" itemprop="url">Hello World</a>
+      <a href="/2016/07/29/seajs-1/" title="" itemprop="url"></a>
   </h1>
   <p class="article-author">By
        
@@ -94,7 +106,7 @@
 		
   </p>
   <p class="article-time">
-    <time datetime="2016-06-23T02:02:38.000Z" itemprop="datePublished"> 发表于 2016-06-23</time>
+    <time datetime="2016-07-28T22:47:58.740Z" itemprop="datePublished"> 发表于 2016-07-29</time>
   </p>
 </header>
 	<div class="article-content">
@@ -102,28 +114,77 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-Everyone"><span class="toc-number">1.</span> <span class="toc-text">Hello Everyone</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#背景"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本应用"><span class="toc-number">2.</span> <span class="toc-text">基本应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#导入Seajs库"><span class="toc-number">2.1.</span> <span class="toc-text">导入Seajs库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置和入口"><span class="toc-number">3.</span> <span class="toc-text">配置和入口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置"><span class="toc-number">3.1.</span> <span class="toc-text">配置</span></a></li></ol></li></ol>
 		
 		</div>
 		
-		<p>Welcome to <a href="https://icamille.github.io/">Camille Blog</a>! This is my very first post.<a id="more"></a>  </p>
-<h2 id="Hello-Everyone"><a href="#Hello-Everyone" class="headerlink" title="Hello Everyone"></a>Hello Everyone</h2><p>欢迎大家来到我的博客，以后会和大家分享工作和生活方面的收获。作为自己一步一步搭起来的博客的第一篇文章，谨以此文记录下自己的“劳动成果”。<!--more-->  嘿嘿……</p>
-<p><img src="../../../../css/images/read.jpg" alt="Camille Blog"></p>
-  
+		<p>简单易用Seajs  </p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>一个网站必然会涉及很多功能，tab选项卡、slide轮播图、pop弹出层、美化alert、paging分页等等等等，如果是企业网站那整合成一个js文件就够了，即 插件库 。 </p>
+<p>但是对于一个大的网站平台来说需要的功能可能会有很多，而且随着平台的发展，功能会越来越多。到最后会发展成怎样的情况呢？</p>
+<p> <img src="../../../../css/images/seajs-example.png" alt="">  </p>
+<p>这是 <em><a href="https://www.qian360.com/" target="_blank" rel="external">钱庄网</a></em> 原先的插件库，已经接近20个插件了。想象一下，你在做一个简单的活动单页里面用到了tab选项卡，于是你把插件库引用了进来，这个时候你有想过你只是需要一个功能但是却把整个插件库引进来了，多大的浪费啊。该怎么解决这种问题呢? </p>
+<p>我们希望一个页面按需引入，这个页面需要什么功能就引入什么功能。现在主流的工具有两种，amd规范的RequireJS、cmd规范的Seajs。  </p>
+<p>什么是Seajs</p>
+<ol>
+<li>Seajs是一个加载器 <a href="http://kb.cnblogs.com/page/211942/" target="_blank" rel="external">http://kb.cnblogs.com/page/211942/</a> </li>
+<li>遵循 CMD 规范模块化开发，依赖的自动加载、配置的简洁清晰。   </li>
+<li>兼容性<br>• Chrome 3+<br>• Firefox 2+<br>• Safari 3.2+<br>• Opera 10+<br>•IE 5.5+</li>
+</ol>
+<h2 id="基本应用"><a href="#基本应用" class="headerlink" title="基本应用"></a>基本应用</h2><h3 id="导入Seajs库"><a href="#导入Seajs库" class="headerlink" title="导入Seajs库"></a>导入Seajs库</h3><ol>
+<li>去官网下载最新的seajs文件， <a href="http://seajs.org/docs/#downloads" target="_blank" rel="external">http://seajs.org/docs/#downloads</a>   </li>
+<li><p>在页尾引入seajs：   </p>
+<script src="/site/script/sea.js"></script>  
+</li>
+<li><p>然后在它下面写模块的配置和入口。      </p>
+<pre><code>// seajs 的简单配置  
+seajs.config({  
+  base: &quot;../sea-modules/&quot;,  
+  alias: {  
+    &quot;jquery&quot;: &quot;jquery/jquery/1.10.1/jquery.js&quot;  
+  }  
+});    
+
+// 加载入口模块  
+seajs.use(&quot;../static/hello/src/main&quot;);
+</code></pre></li>
+</ol>
+<h2 id="配置和入口"><a href="#配置和入口" class="headerlink" title="配置和入口"></a>配置和入口</h2><p>这里解释下配置和入口的意思。</p>
+<h3 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h3><p>通常在配置上修改seajs的路径和别名。</p>
+<p>seajs的 <strong>路径是相对于前面引入的seajs文件的</strong> 。假如是这样的目录结构：  </p>
+<p>我们平时如果我们在index.html上引用main.js路径应该是这样写的 script/main.js ，从news.html引用main.js就要这样写， ../script/main.js 。 </p>
+<p>而在seajs是相对于seajs文件的，一律直接使用 main.js 就OK了，是不是很方便呢？ </p>
+<p>既然这么方便那在什么情况需要配置呢？一般情况是用不到的。但是假如你的路径特别深 或者要做路径映射的时候它的作用就来了。下面介绍下常用的几个配置。<br>seajs.config({<br>  // Sea.js 的基础路径（修改这个就不是路径就不是相对于seajs文件了）<br>  base: ‘<a href="http://example.com/path/to/base/" target="_blank" rel="external">http://example.com/path/to/base/</a>‘,<br>  // 别名配置（用变量表示文件，解决路径层级过深和实现路径映射）<br>  alias: {<br>    ‘es5-safe’: ‘gallery/es5-safe/0.9.3/es5-safe’,<br>    ‘json’: ‘gallery/json/1.0.2/json’,<br>    ‘jquery’: ‘jquery/jquery/1.10.1/jquery’<br>  },<br>  // 路径配置（用变量表示路径，解决路径层级过深的问题）<br>  paths: {<br>    ‘gallery’: ‘<a href="https://a.alipayobjects.com/gallery" target="_blank" rel="external">https://a.alipayobjects.com/gallery</a>‘<br>  }<br>});</p>
+<p>查看更多 </p>
+<p>入口</p>
+<p>入口即加载，需要加载什么文件（模块加载器）就在这里引入。 sea.js 在下载完成后，会自动加载入口模块。<br>seajs.use(“abc/main”);  //导入seajs.js同级的abc文件夹下的main.js模块的（后缀名可略去不写）</p>
+<p>seajs.use()还有另外一种用法。 </p>
+<p>有时候我们写一个简单的单页并不想为它单独写一个js文件，选择在直接把js代码写在页面上，seajs通过 seajs.use() 实现了这个。 接收两个参数第一个是文件依赖(单个用字符串数组都可以，多个需用数组表示)，第二个是回调函数。 </p>
+<p>加载单个依赖<br>//加载模块 main，并在加载完成时，执行指定回调<br>seajs.use(‘./main’, function(main) {<br>  main.init();<br>});</p>
+<p>加载多个依赖<br>//并发加载模块 a 和模块 b，并在都加载完成时，执行指定回调<br>seajs.use([‘./a’, ‘./b’], function(a, b) {<br>  a.init();<br>  b.init();<br>});</p>
+<p>这里回掉函数中的a和b参数是与前面的模块暴露出来的接口一一对应的。有时候也许只需要使用b的接口，但是也要把a参数写上。什么是暴露接口下面会解释。</p>
+<p>模块开发</p>
+<p>这里才是重点，其实也很简单就是一个书写规范（CMD）而已。<br>// 所有模块都通过 define 来定义<br>define(function(require, exports, module) {</p>
+<p>  // 通过 require 引入依赖<br>  var $ = require(‘jquery’);<br>  var Spinning = require(‘./spinning’);</p>
+<p>  // 通过 exports 对外提供接口<br>  exports.doSomething = …</p>
+<p>  // 或者通过 module.exports 提供整个接口<br>  module.exports = …</p>
+<p>});</p>
+<p>模块是通过define()方法包装的，然后内部痛过require()方法引入需要的依赖文件(模块)。（也可以引入.css文件哦~）</p>
+<p>模块最好是面向对象开发的，这样最后可以方便的通过 exports.doSomething 或 module.exports 把模块的接口给暴露出来。如果你是写的是jq插件的话就不需要这个功能了，因为你的接口是写在jquery的对象里的。如果你不需要提供接口的话也可以不使用这两个属性哦！ </p>
+<p>事实上define方法还有另外几个参数，一般情况我们用不到。具体看 官方API 。 </p>
+<p>小结</p>
+<p>其实Seajs的基本使用就这么简单，日常使用足够了，之前看官网的 5分钟教程 楞是没看懂，后来想想真的是5分钟学会啊,悟性太低- -|| </p>
+<p>注意事项</p>
+<ol>
+<li>模块内的函数依赖必须交代清楚，防止模块在函数依赖加载前先加载出来。而且还增强了模块的独立性。 </li>
+<li>引入seajs的时候最好给 <script> 标签加个id，可以快速访问到这个标签（我是在模块合并时用到它的） </li>
+<li>还有前面提到的使用 seajs.use() 在.html页面上写js时如果有多个模块依赖，需要使用暴露出来的接口就要让参数与它一一对应。 </li>
+</ol>
+<p>###<br><a href="http://www.tuicool.com/articles/3uIZzy">http://www.tuicool.com/articles/3uIZzy</a></p>
+</script></li></ol>  
 	</div>
 		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
-<div class="article-categories">
-  <span></span>
-  <a class="article-category-link" href="/categories/博客/">博客</a>
-</div>
-
-
-  <div class="article-tags">
-  
-  <span></span> <a href="/tags/BLog/">BLog</a>
-  </div>
 
 </div>
 
@@ -131,7 +192,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://icamille.github.io/2016/06/23/hello-world/" data-title="Hello World | camille&#39;s Blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://icamille.github.io/2016/07/29/seajs-1/" data-title="camille&#39;s Blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -145,19 +206,27 @@
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2016/07/01/design-principles-of-web-front/" title="Web前端设计原则">
+ <a href="/2016/07/29/readbook/" title="《如何阅读一本书》阅读笔记">
   <strong>上一篇：</strong><br/>
   <span>
-  Web前端设计原则</span>
+  《如何阅读一本书》阅读笔记</span>
 </a>
 </div>
 
+
+<div class="next">
+<a href="/2016/07/27/about-tofixed/"  title="toFixed引发的思考">
+ <strong>下一篇：</strong><br/> 
+ <span>toFixed引发的思考
+</span>
+</a>
+</div>
 
 </nav>
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/06/23/hello-world/" data-title="Hello World" data-url="http://icamille.github.io/2016/06/23/hello-world/"></div>
+	<div class="ds-thread" data-thread-key="2016/07/29/seajs-1/" data-title="" data-url="http://icamille.github.io/2016/07/29/seajs-1/"></div>
 </section>
 
 
@@ -167,7 +236,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Hello-Everyone"><span class="toc-number">1.</span> <span class="toc-text">Hello Everyone</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#背景"><span class="toc-number">1.</span> <span class="toc-text">背景</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#基本应用"><span class="toc-number">2.</span> <span class="toc-text">基本应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#导入Seajs库"><span class="toc-number">2.1.</span> <span class="toc-text">导入Seajs库</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#配置和入口"><span class="toc-number">3.</span> <span class="toc-text">配置和入口</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#配置"><span class="toc-number">3.1.</span> <span class="toc-text">配置</span></a></li></ol></li></ol>
  
   </div>
 

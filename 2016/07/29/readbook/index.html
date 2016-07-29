@@ -4,25 +4,26 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>toFixed引发的思考 | camille&#39;s Blog</title>
+    <title>《如何阅读一本书》阅读笔记 | camille&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="camille">
     
 
     
-    <meta name="description" content="在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？">
+    <meta name="description" content="最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天是第四周的最后一天，第四本书也已阅读完成。本文主要是想通过思维导图的方式和大家分享[美] 莫提默·J. 艾德勒 / 查尔斯·范多伦 的《如何阅读一本书》一书。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="toFixed引发的思考">
-<meta property="og:url" content="http://icamille.github.io/2016/07/27/ahout-tofixed/index.html">
+<meta property="og:title" content="《如何阅读一本书》阅读笔记">
+<meta property="og:url" content="http://icamille.github.io/2016/07/29/readbook/index.html">
 <meta property="og:site_name" content="camille's Blog">
-<meta property="og:description" content="在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？">
-<meta property="og:image" content="http://icamille.github.io/../../../../css/images/to-fixed.jpg">
-<meta property="og:updated_time" content="2016-07-27T01:54:20.000Z">
+<meta property="og:description" content="最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天是第四周的最后一天，第四本书也已阅读完成。本文主要是想通过思维导图的方式和大家分享[美] 莫提默·J. 艾德勒 / 查尔斯·范多伦 的《如何阅读一本书》一书。">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/howtoreadbook-2016160729.png">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/howtoreadabook.png">
+<meta property="og:updated_time" content="2016-07-29T14:35:06.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="toFixed引发的思考">
-<meta name="twitter:description" content="在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？">
-<meta name="twitter:image" content="http://icamille.github.io/../../../../css/images/to-fixed.jpg">
+<meta name="twitter:title" content="《如何阅读一本书》阅读笔记">
+<meta name="twitter:description" content="最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天是第四周的最后一天，第四本书也已阅读完成。本文主要是想通过思维导图的方式和大家分享[美] 莫提默·J. 艾德勒 / 查尔斯·范多伦 的《如何阅读一本书》一书。">
+<meta name="twitter:image" content="http://icamille.github.io/../../../../css/images/howtoreadbook-2016160729.png">
 
     
     <link rel="alternative" href="/atom.xml" title="camille&#39;s Blog" type="application/atom+xml">
@@ -86,7 +87,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/07/27/ahout-tofixed/" title="toFixed引发的思考" itemprop="url">toFixed引发的思考</a>
+      <a href="/2016/07/29/readbook/" title="《如何阅读一本书》阅读笔记" itemprop="url">《如何阅读一本书》阅读笔记</a>
   </h1>
   <p class="article-author">By
        
@@ -94,7 +95,7 @@
 		
   </p>
   <p class="article-time">
-    <time datetime="2016-07-26T23:02:38.000Z" itemprop="datePublished"> 发表于 2016-07-27</time>
+    <time datetime="2016-07-29T14:29:38.000Z" itemprop="datePublished"> 发表于 2016-07-29</time>
   </p>
 </header>
 	<div class="article-content">
@@ -106,53 +107,10 @@
 		
 		</div>
 		
-		<p>在对文件上传进度进行格式化处理时，涉及到精度的四舍五入问题，例如保留两位小数。这在JS中可以通过调用toFixed传入精度实现。但问题来了，先乘100再舍入，还是先舍入再乘100？<a id="more"></a></p>
-<p><strong>先看结果：</strong></p>
-<pre><code>var a = Math.random();  
-console.log(a);  
-console.log(a.toFixed(4));  
-console.log(a.toFixed(4) * 100);  
-console.log((a * 100).toFixed(2));
-</code></pre><p><strong>输出1：</strong></p>
-<pre><code>0.8988301526666329  
-0.8988  
-89.88000000000001
-89.88
-</code></pre><p><strong>输出2：</strong></p>
-<pre><code>0.413465264585297  
-0.4135  
-41.349999999999994  
-41.35
-</code></pre><p><strong>输出3：</strong></p>
-<pre><code>0.1348901139915517
-0.1349
-13.489999999999998
-13.49
-</code></pre><p><strong>输出4：</strong></p>
-<pre><code>0.2731272622047103  
-0.2731  
-27.310000000000002  
-27.31  
-</code></pre><p>  可以看出，两种调用顺序的执行结果并不一致，前者甚至没有达到预期的保留2位小数。该如何解释并解决呢？ </p>
-<p>  回到JS对浮点数的处理，JS仅有Number数值类型，而Number采用的是IEEE-754 64位双精度浮点数编码。其具有以下特点：</p>
-<ol>
-<li>浮点数可表示的值范围比同等位数的整数表示方式的值范围要大得多；</li>
-<li>浮点数无法精确表示其值范围内的所有数值，而有符号和无符号整数则是精确表示其值范围内的每个数值；</li>
-<li>浮点数只能精确表示m*2e的数值；</li>
-<li>当biased-exponent为2e-1-1时，浮点数能精确表示该范围内的各整数值；</li>
-<li>当biased-exponent不为2e-1-1时，浮点数不能精确表示该范围内的各整数值。</li>
-</ol>
-<p>由此可知，部分数值并不能精确表示，最终在运算结果中导致了偏差。</p>
-<p>对以上问题的分析，详见：<a href="https://segmentfault.com/a/1190000005022170" target="_blank" rel="external">Why 0.1 + 0.2 === 0.30000000000000004?</a>。其中也给出了几个解决的方案，可以作为问题的补充。</p>
-<p>而对于本问题的解决，将toFixed调用放至最后即可。  </p>
-<p><strong>总结</strong></p>
-<ol>
-<li>调用顺序很重要！</li>
-<li>异常测试很重要，尤其对于条件特殊值的非边界情况（如特定的随机数）。     </li>
-</ol>
-<hr>
-<p><strong>本文（当然）是从<a href="http://www.ifuyun.com/post/20ce98be3cbcd989" target="_blank" rel="external">I,Fuyun</a>偷来的，你们可以去告状了： </strong><br> <img src="../../../../css/images/to-fixed.jpg" alt="I,Fuyun">  </p>
-<p> 网址：<a href="http://www.ifuyun.com/post/20ce98be3cbcd989" target="_blank" rel="external">http://www.ifuyun.com/post/20ce98be3cbcd989</a></p>
+		<p>最近参与熊猫书院《十个月提升自己》第三期的读书活动，每周阅读一本图书。7月开始，今天是第四周的最后一天，第四本书也已阅读完成。本文主要是想通过思维导图的方式和大家分享[美] 莫提默·J. 艾德勒 / 查尔斯·范多伦 的《如何阅读一本书》一书。<a id="more"></a></p>
+<p>下面分享给大家：<br> <img src="../../../../css/images/howtoreadbook-2016160729.png" alt="《如何阅读一本书》阅读笔记 -- 思维导图"></p>
+<p> <img src="../../../../css/images/howtoreadabook.png" alt="《如何阅读一本书》阅读笔记 -- 思维导图"></p>
+<p>每天成长一点，遇见更好的自己！</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -160,13 +118,13 @@ console.log((a * 100).toFixed(2));
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/技术/">技术</a>
+  <a class="article-category-link" href="/categories/读书笔记/">读书笔记</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/JavaScript/">JavaScript</a>
+  <span></span> <a href="/tags/如何阅读一本书/">如何阅读一本书</a>
   </div>
 
 </div>
@@ -175,7 +133,7 @@ console.log((a * 100).toFixed(2));
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://icamille.github.io/2016/07/27/ahout-tofixed/" data-title="toFixed引发的思考 | camille&#39;s Blog" data-tsina="null" class="share clearfix">
+	  <div data-url="http://icamille.github.io/2016/07/29/readbook/" data-title="《如何阅读一本书》阅读笔记 | camille&#39;s Blog" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -190,9 +148,9 @@ console.log((a * 100).toFixed(2));
  
 
 <div class="next">
-<a href="/2016/07/22/jingjin/"  title="《精进》阅读笔记">
+<a href="/2016/07/29/seajs-1/"  title="">
  <strong>下一篇：</strong><br/> 
- <span>《精进》阅读笔记
+ <span>(no title)
 </span>
 </a>
 </div>
@@ -201,7 +159,7 @@ console.log((a * 100).toFixed(2));
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/07/27/ahout-tofixed/" data-title="toFixed引发的思考" data-url="http://icamille.github.io/2016/07/27/ahout-tofixed/"></div>
+	<div class="ds-thread" data-thread-key="2016/07/29/readbook/" data-title="《如何阅读一本书》阅读笔记" data-url="http://icamille.github.io/2016/07/29/readbook/"></div>
 </section>
 
 
@@ -243,7 +201,7 @@ console.log((a * 100).toFixed(2));
 		  
 		
 		  
-			<li><a href="/categories/读书笔记/" title="读书笔记">读书笔记<sup>3</sup></a></li>
+			<li><a href="/categories/读书笔记/" title="读书笔记">读书笔记<sup>4</sup></a></li>
 		  
 		
 		</ul>
@@ -256,23 +214,7 @@ console.log((a * 100).toFixed(2));
 		<ul class="clearfix">
 		
 			
-				<li><a href="/tags/提升自我/" title="提升自我">提升自我<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/BLog/" title="BLog">BLog<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/拖延心理学/" title="拖延心理学">拖延心理学<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/自控力/" title="自控力">自控力<sup>1</sup></a></li>
-			
-		
-			
-				<li><a href="/tags/Markdown/" title="Markdown">Markdown<sup>1</sup></a></li>
+				<li><a href="/tags/JavaScript/" title="JavaScript">JavaScript<sup>1</sup></a></li>
 			
 		
 			
@@ -280,7 +222,27 @@ console.log((a * 100).toFixed(2));
 			
 		
 			
-				<li><a href="/tags/JavaScript/" title="JavaScript">JavaScript<sup>1</sup></a></li>
+				<li><a href="/tags/提升自我/" title="提升自我">提升自我<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/拖延心理学/" title="拖延心理学">拖延心理学<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/Markdown/" title="Markdown">Markdown<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/BLog/" title="BLog">BLog<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/自控力/" title="自控力">自控力<sup>1</sup></a></li>
+			
+		
+			
+				<li><a href="/tags/如何阅读一本书/" title="如何阅读一本书">如何阅读一本书<sup>1</sup></a></li>
 			
 		
 		</ul>
