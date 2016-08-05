@@ -451,7 +451,7 @@ body >header a {
 }
 #textlogo h1.site-name {
   width: 86%;
-  font-family: "Helvetica Neue", "Helvetica", "Microsoft YaHei", "WenQuanYi Micro Hei", Arial, sans-serif;
+  font-family: "Ravie";
   font-size: 200%;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -459,12 +459,12 @@ body >header a {
 }
 @media only screen and (min-width: 768px) {
   #textlogo h1.site-name {
-    font-size: 240%;
+    font-size: 220%;
   }
 }
 @media only screen and (min-width: 1024px) {
   #textlogo h1.site-name {
-    font-size: 280%;
+    font-size: 250%;
   }
 }
 #textlogo h2.blog-motto {
