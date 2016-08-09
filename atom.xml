@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-08-09T02:09:34.000Z</updated>
+  <updated>2016-08-09T01:50:40.000Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -14,36 +14,6 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>前端书籍目录</title>
-    <link href="http://icamille.github.io/2016/08/08/fed-books/"/>
-    <id>http://icamille.github.io/2016/08/08/fed-books/</id>
-    <published>2016-08-08T13:02:38.000Z</published>
-    <updated>2016-08-09T02:09:34.000Z</updated>
-    
-    <content type="html">&lt;p&gt; &lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《ECMAScript 6入门》&lt;/a&gt;&lt;br&gt;《用angularjs开发下一代web应用》  &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;《bootstrap用户手册》&lt;br&gt;《jquery权威指南》  &lt;/p&gt;
-&lt;p&gt;《JavaScript高级程序设计》&lt;/p&gt;
-&lt;p&gt;《javascript语言精粹》&lt;br&gt;《JavaScript权威指南（第6版）》&lt;br&gt;《高性能javascript》&lt;br&gt;《JavaScript学习指南》&lt;br&gt;《javascript经典实例》&lt;br&gt;《编写可维护的javascript》&lt;br&gt;《基于mvc的javascript web富应用开发》&lt;br&gt;《javascript模式》&lt;br&gt;《深入HTML5应用开发》&lt;br&gt;《jquery ui开发指南》&lt;br&gt;《css权威指南》&lt;br&gt;《html 5应用开发实践指南》&lt;br&gt;《html 5与css 3权威指南》&lt;/p&gt;
-&lt;p&gt;《head first html与css(第2版)》&lt;/p&gt;
-&lt;p&gt;《JavaScript框架设计》&lt;br&gt;《JavaScript专家编程》&lt;br&gt;《JavaScript Ninjia》&lt;br&gt;《JavaScript语言精粹（修订版）》&lt;br&gt;《JavaScript设计模式》&lt;br&gt;《JavaScript面向对象编程指南（第2版）》&lt;br&gt;《JavaScript函数式编程》&lt;br&gt;《JavaScript高效图形编程》  &lt;/p&gt;
-&lt;p&gt;《编写可测试的JavaScript代码》&lt;br&gt;《编写可维护的JavaScript》&lt;br&gt;《你不知道的JavaScript（上卷）》英文原版猛戳：&lt;a href=&quot;https://github.com/getify/You-Dont-Know-JS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;英文原版  &lt;/a&gt;&lt;br&gt;《第三方JavaScript编程》&lt;br&gt;《单页Web应用》  &lt;/p&gt;
-&lt;p&gt;《HTML5和JavaScript网页设计基础》&lt;br&gt;《HTML5+JavaScript动画基础》&lt;br&gt;《HTML5和JavaScript Web应用开发》&lt;br&gt;《html5移动web开发指南》&lt;/p&gt;
-&lt;p&gt;《图解CSS3》&lt;br&gt;《bootstrap实战》  &lt;/p&gt;
-</content>
-    
-    <summary type="html">
-    
-      &lt;p&gt; &lt;a href=&quot;http://es6.ruanyifeng.com/&quot;&gt;《ECMAScript 6入门》&lt;/a&gt;&lt;br&gt;《用angularjs开发下一代web应用》
-    
-    </summary>
-    
-      <category term="技术" scheme="http://icamille.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
-    
-    
-      <category term="前端书籍" scheme="http://icamille.github.io/tags/%E5%89%8D%E7%AB%AF%E4%B9%A6%E7%B1%8D/"/>
-    
-  </entry>
   
   <entry>
     <title>前端书籍目录</title>
@@ -67,6 +37,36 @@
     
       &lt;h1 id=&quot;书籍&quot;&gt;&lt;a href=&quot;#书籍&quot; class=&quot;headerlink&quot; title=&quot;书籍&quot;&gt;&lt;/a&gt;书籍&lt;/h1&gt;&lt;p&gt;##&lt;/p&gt;
 &lt;p&gt; &lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;e
+    
+    </summary>
+    
+      <category term="技术" scheme="http://icamille.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="前端书籍" scheme="http://icamille.github.io/tags/%E5%89%8D%E7%AB%AF%E4%B9%A6%E7%B1%8D/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>前端书籍目录</title>
+    <link href="http://icamille.github.io/2016/08/08/book-list-for-fed/"/>
+    <id>http://icamille.github.io/2016/08/08/book-list-for-fed/</id>
+    <published>2016-08-08T13:02:38.000Z</published>
+    <updated>2016-08-09T02:09:34.000Z</updated>
+    
+    <content type="html">&lt;p&gt; &lt;a href=&quot;http://es6.ruanyifeng.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;《ECMAScript 6入门》&lt;/a&gt;&lt;br&gt;《用angularjs开发下一代web应用》  &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;br&gt;《bootstrap用户手册》&lt;br&gt;《jquery权威指南》  &lt;/p&gt;
+&lt;p&gt;《JavaScript高级程序设计》&lt;/p&gt;
+&lt;p&gt;《javascript语言精粹》&lt;br&gt;《JavaScript权威指南（第6版）》&lt;br&gt;《高性能javascript》&lt;br&gt;《JavaScript学习指南》&lt;br&gt;《javascript经典实例》&lt;br&gt;《编写可维护的javascript》&lt;br&gt;《基于mvc的javascript web富应用开发》&lt;br&gt;《javascript模式》&lt;br&gt;《深入HTML5应用开发》&lt;br&gt;《jquery ui开发指南》&lt;br&gt;《css权威指南》&lt;br&gt;《html 5应用开发实践指南》&lt;br&gt;《html 5与css 3权威指南》&lt;/p&gt;
+&lt;p&gt;《head first html与css(第2版)》&lt;/p&gt;
+&lt;p&gt;《JavaScript框架设计》&lt;br&gt;《JavaScript专家编程》&lt;br&gt;《JavaScript Ninjia》&lt;br&gt;《JavaScript语言精粹（修订版）》&lt;br&gt;《JavaScript设计模式》&lt;br&gt;《JavaScript面向对象编程指南（第2版）》&lt;br&gt;《JavaScript函数式编程》&lt;br&gt;《JavaScript高效图形编程》  &lt;/p&gt;
+&lt;p&gt;《编写可测试的JavaScript代码》&lt;br&gt;《编写可维护的JavaScript》&lt;br&gt;《你不知道的JavaScript（上卷）》英文原版猛戳：&lt;a href=&quot;https://github.com/getify/You-Dont-Know-JS&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;英文原版  &lt;/a&gt;&lt;br&gt;《第三方JavaScript编程》&lt;br&gt;《单页Web应用》  &lt;/p&gt;
+&lt;p&gt;《HTML5和JavaScript网页设计基础》&lt;br&gt;《HTML5+JavaScript动画基础》&lt;br&gt;《HTML5和JavaScript Web应用开发》&lt;br&gt;《html5移动web开发指南》&lt;/p&gt;
+&lt;p&gt;《图解CSS3》&lt;br&gt;《bootstrap实战》  &lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt; &lt;a href=&quot;http://es6.ruanyifeng.com/&quot;&gt;《ECMAScript 6入门》&lt;/a&gt;&lt;br&gt;《用angularjs开发下一代web应用》
     
     </summary>
     
