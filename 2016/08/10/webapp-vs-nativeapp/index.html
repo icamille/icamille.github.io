@@ -4,26 +4,34 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Web前端设计原则 | I,Camille</title>
+    <title>聊聊Web App、Hybrid App与Native App的设计差异 | I,Camille</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="camille">
     
 
     
-    <meta name="description" content="最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享给大家。
-下面就是经验的前端指导原则：">
+    <meta name="description" content="目前主流应用程序大体分为三类：Web App、Hybrid App、 Native App。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Web前端设计原则">
-<meta property="og:url" content="http://icamille.github.io/2016/07/01/design-principles-of-web-front/index.html">
+<meta property="og:title" content="聊聊Web App、Hybrid App与Native App的设计差异">
+<meta property="og:url" content="http://icamille.github.io/2016/08/10/webapp-vs-nativeapp/index.html">
 <meta property="og:site_name" content="I,Camille">
-<meta property="og:description" content="最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享给大家。
-下面就是经验的前端指导原则：">
-<meta property="og:updated_time" content="2016-08-05T07:20:30.000Z">
+<meta property="og:description" content="目前主流应用程序大体分为三类：Web App、Hybrid App、 Native App。">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/1.jpg">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/2.jpg">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/3.jpg">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/4.jpg">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/5.jpg">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/6.jpg">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/7.jpg">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/8.jpg">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/9.jpg">
+<meta property="og:image" content="http://icamille.github.io/../../../../css/images/app-0810/10.jpg">
+<meta property="og:updated_time" content="2016-08-10T03:29:22.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Web前端设计原则">
-<meta name="twitter:description" content="最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享给大家。
-下面就是经验的前端指导原则：">
+<meta name="twitter:title" content="聊聊Web App、Hybrid App与Native App的设计差异">
+<meta name="twitter:description" content="目前主流应用程序大体分为三类：Web App、Hybrid App、 Native App。">
+<meta name="twitter:image" content="http://icamille.github.io/../../../../css/images/app-0810/1.jpg">
 
     
     <link rel="alternative" href="/atom.xml" title="I,Camille" type="application/atom+xml">
@@ -87,7 +95,7 @@
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/07/01/design-principles-of-web-front/" title="Web前端设计原则" itemprop="url">Web前端设计原则</a>
+      <a href="/2016/08/10/webapp-vs-nativeapp/" title="聊聊Web App、Hybrid App与Native App的设计差异" itemprop="url">聊聊Web App、Hybrid App与Native App的设计差异</a>
   </h1>
   <p class="article-author">By
        
@@ -95,7 +103,7 @@
 		
   </p>
   <p class="article-time">
-    <time datetime="2016-07-01T02:02:38.000Z" itemprop="datePublished"> 发表于 2016-07-01</time>
+    <time datetime="2016-08-10T03:02:38.000Z" itemprop="datePublished"> 发表于 2016-08-10</time>
   </p>
 </header>
 	<div class="article-content">
@@ -103,25 +111,111 @@
 		<div id="toc" class="toc-article">
 			<strong class="toc-title">文章目录</strong>
 		
-			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#KISS原则（Keep-it-Simple-and-Stupid）"><span class="toc-number">1.</span> <span class="toc-text">KISS原则（Keep it Simple and Stupid）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DRY原则（Don’t-Repeat-Yourself）"><span class="toc-number">2.</span> <span class="toc-text">DRY原则（Don’t Repeat Yourself）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最少知道原则。"><span class="toc-number">3.</span> <span class="toc-text">最少知道原则。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分治原则"><span class="toc-number">4.</span> <span class="toc-text">分治原则</span></a></li></ol>
+			<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、Web-App、Hybrid-App、Native-App-纵向对比"><span class="toc-number">1.</span> <span class="toc-text">一、Web App、Hybrid App、Native App 纵向对比</span></a></li></ol>
 		
 		</div>
 		
-		<p>最近看了@余果 的《Web全栈工程师的自我修养》颇有一些收获，刚好最近在制定经验前端的规范化工作，制定了几条前端设计原则，分享给大家。</p>
-<p>下面就是经验的前端指导原则：<a id="more"></a></p>
-<p>设计原则是指导性原则，比较抽象，可扩展</p>
+		<p> 目前主流应用程序大体分为三类：Web App、Hybrid App、 Native App。<a id="more"></a>    </p>
+<p> <img src="../../../../css/images/app-0810/1.jpg" alt="Web App、Hybrid App、 Native App">    </p>
+<h2 id="一、Web-App、Hybrid-App、Native-App-纵向对比"><a href="#一、Web-App、Hybrid-App、Native-App-纵向对比" class="headerlink" title="一、Web App、Hybrid App、Native App 纵向对比"></a>一、Web App、Hybrid App、Native App 纵向对比</h2><p>首先，我们来看看什么是 Web App、Hybrid App、 Native App。</p>
+<p>###1. Web APP   </p>
+<p>Web App 指采用Html5语言写出的App，不需要下载安装。类似于现在所说的轻应用。生存在浏览器中的应用，基本上可以说是触屏版的网页应用。</p>
+<p>优点</p>
+<p>（1）开发成本低，  </p>
+<p>（2）更新快，</p>
+<p>（3）更新无需通知用户，不需要手动升级</p>
+<p>（4）能够跨多个平台和终端。</p>
+<p>缺点：</p>
+<p>（1）临时性的入口</p>
+<p>（2）无法获取系统级别的通知，提醒，动效等等</p>
+<p>（3）用户留存率低</p>
+<p>（4）设计受限制诸多</p>
+<p>（5）体验较差</p>
+<p>###2. Hybrid App</p>
+<p>Hybrid APP指的是半原生半Web的混合类App。需要下载安装，看上去类似Native App，但只有很少的UI Web View，访问的内容是 Web 。</p>
+<p>例如Store里的新闻类APP，视频类APP普遍采取的是Native的框架，Web的内容。</p>
+<p>Hybrid App 极力去打造类似于Native App 的体验，但仍受限于技术，网速，等等很多因素。尚不完美。   </p>
+<p>###3. Native App</p>
+<p>Native APP 指的是原生程序，一般依托于操作系统，有很强的交互，是一个完整的App，可拓展性强。需要用户下载安装使用。   </p>
+<p>优点：</p>
+<p>（1）打造完美的用户体验</p>
+<p>（2）性能稳定</p>
+<p>（3）操作速度快，上手流畅</p>
+<p>（4）访问本地资源（通讯录，相册）</p>
+<p>（5）设计出色的动效，转场，</p>
+<p>（6）拥有系统级别的贴心通知或提醒</p>
+<p>（7）用户留存率高</p>
+<p>缺点：</p>
+<p>（1）分发成本高（不同平台有不同的开发语言和界面适配）</p>
+<p>（2）维护成本高（例如一款App已更新至V5版本，但仍有用户在使用V2， V3， V4版本，需要更多的开发人员维护之前的版本）</p>
+<p>（3）更新缓慢，根据不同平台，提交–审核–上线 等等不同的流程，需要经过的流程较复杂   </p>
+<p>##二、Web App、Hybrid App、Native App 技术特性##</p>
+<p><img src="../../../../css/images/app-0810/2.jpg" alt="Web App、Hybrid App、Native App 技术特性">    </p>
+<p>由上图可见，Web APP 的开发基于Html5语言。而Html5语言本身又有着不可避免的局限性。正是这些局限性的存在，使得Web App在体验中要逊于Native App。   </p>
+<p>##三、Web App受限制因素及设计要点##<br><img src="../../../../css/images/app-0810/3.jpg" alt="Web App受限制因素及设计要点">  </p>
+<p>相比Native App，Web App体验中受限于以上5个因素：网络环境，渲染性能，平台特性，受限于浏览器，系统限制。   </p>
+<p>###1. 网络环境，渲染性能</p>
+<p>Web APP对网络环境的依赖性较大，因为Web APP中的H5页面，当用户使用时，去服务器请求显示页面。如果此时用户恰巧遇到网速慢，网络不稳定等其他环境时，用户请求页面的效率大打折扣，在用户使 用中会出现不流畅，断断续续的不良感受。同时，H5技术自身渲染性能较弱：对复杂的图形样式，多样的动效，自定义字体等的支持性不强。</p>
+<p>因此，基于网络环境和渲染性能的影响，在设计H5页面时，应注意以下几点：</p>
 <ul>
-<li>KISS原则</li>
-<li>DRY原则   </li>
-<li>最少知道原则 </li>
-<li>分治原则</li>
+<li>简化不重要的动画/动效<ul>
+<li>简化复杂的图形文字样式</li>
+<li>减少页面渲染的频率和次数</li>
 </ul>
-<h2 id="KISS原则（Keep-it-Simple-and-Stupid）"><a href="#KISS原则（Keep-it-Simple-and-Stupid）" class="headerlink" title="KISS原则（Keep it Simple and Stupid）"></a>KISS原则（Keep it Simple and Stupid）</h2><p>一切尽可能简单！ 简单就是美，能简单的绝不复杂。</p>
-<h2 id="DRY原则（Don’t-Repeat-Yourself）"><a href="#DRY原则（Don’t-Repeat-Yourself）" class="headerlink" title="DRY原则（Don’t Repeat Yourself）"></a>DRY原则（Don’t Repeat Yourself）</h2><p>顾名思义，任何一段代码如果需要复制第三次，需要进行抽象。</p>
-<h2 id="最少知道原则。"><a href="#最少知道原则。" class="headerlink" title="最少知道原则。"></a>最少知道原则。</h2><p>高内聚，低耦合，任何事物应该保持对外界的最少知道原则。</p>
-<h2 id="分治原则"><a href="#分治原则" class="headerlink" title="分治原则"></a>分治原则</h2><p>复杂的问题，负责的功能，应该拆分，由更小的部分组成。</p>
-<hr>
-<p>原文网址：<a href="http://yanhaijing.com/web/2016/06/17/design-principles-of-web-front/" target="_blank" rel="external">http://yanhaijing.com/web/2016/06/17/design-principles-of-web-front/</a></p>
+</li>
+</ul>
+<p>从下图移动Web版 jing.fm和Native版jing对比后可以看出：Web APP首页去除冗余的功能，回溯本源，只给用户提供了jing.fm最初的本质需求——电台。既符合H5精简功能又达到了突出核心功能的设计原则。无疑给用户眼前一亮的气息。</p>
+<p>正如书中《瞬间之美》的一个核心观点：重要的并不是我们提供的信息量有多大，而是我们能否给他们提供真正需要的信息。</p>
+<p><img src="../../../../css/images/app-0810/4.jpg" alt="Web版 Jing.fm"> </p>
+<p><img src="../../../../css/images/app-0810/5.jpg" alt="Native版 Jing.fm">  </p>
+<p>再如：百度最新推出的直达号，以良子健身为例：</p>
+<p>从Native App和Web App（百度直达号）的对比中，我们可以看出Native良子以九宫格的形式展现，且属于双重导航，功能入口太多；弊端是用户不知道聚焦在哪里，分散用户 的注意力。而Web版良子整合并减少了导航的入口，增强用户的专注度；界面清爽，整洁，很好地传达了良子本身的寓意——轻松、愉悦、休闲、舒适。</p>
+<p><img src="../../../../css/images/app-0810/6.jpg" alt="良子健身"> </p>
+<p>###2. 受限于浏览器</p>
+<p>通常Web App生存于浏览器里，宿主是浏览器。不同的浏览器自身的属性不尽相同，如：浏览器自带的手势，页面切换方式，链接跳转方式，版本兼容问题等等。</p>
+<p>例如下图：UC 浏览器和百度浏览器自身支持手势切换页面。手指从左侧滑动页面，返回至上一级。百度手机助手H5页面，顶部Banner支持手势左右滑动切换。这一操作与浏览器自身手势是冲突的。  </p>
+<p><img src="../../../../css/images/app-0810/7.jpg" alt="浏览器对比图"> </p>
+<p>再如，基于浏览器的Web APP在打开新的模块中的页面时，大多会新开窗口来展现。例如用户在使用购物类APP时，浏览每日精选模块时，每当打开新的商品时，默认新开一个窗口。这 样的优劣势显而易见：优势是能够记录用户浏览过的痕迹，浏览过的商品，以便后续横向对比；劣势是过多的页面容易使用户迷失在页面中。</p>
+<p>正如Google开发手册里描述：当用户打开一个Web App的时候，他们期待这个应用就像是一个单个应用，而不是一系列网页的结合。然而，什么情况下需要跳转页面，什么情况下在当前页面展示则需要设计师细致考量。</p>
+<p><img src="../../../../css/images/app-0810/8.jpg" alt="淘宝Web版"> </p>
+<p>因此，Web App基于浏览器的特性，从设计角度应该遵循以下了两点：</p>
+<p>少用手势，避免与浏览器手势冲突。</p>
+<p>减少页面跳转次数，尽量在当前页面显示。   </p>
+<p>###3. 系统限制，平台特性</p>
+<p>由于Html5语言的技术特性，无法调用系统级别的权限。例如，系统级别的弹窗，系统级别的通知，地理信息，通讯录，语音等等。且与系统的兼容性也会存在一些问题。以上限制通常导致APP的拓展性不强，体验相对较差。例如百度地图：</p>
+<p><img src="../../../../css/images/app-0810/9.jpg" alt="百度地图web和Native对比图"> </p>
+<p>Web版地图基于浏览器展现，因此，不能全屏显示地图，给用户的眼界带来局限感；相反，Native 版地图以全屏展现的形式，很好的拓展了用户的视野。整个界面干净简洁，首页去除冗余功能。</p>
+<p>在制定路线的体验中，如图：</p>
+<p><img src="../../../../css/images/app-0810/10.jpg" alt="百度地图制定路线图web和Native对比"> </p>
+<p>Web 版地图耗费的流量大于Native版，且不能预先缓存离线地图。对于地理位置的判断也是基于宿主浏览器，而非Web地图本身。获取路线后，对于更换到达方式，相对来说是不便利的。</p>
+<p>相反，Native 版地图，能够直接访问用户的地理位置，能够很清晰的为用户展现App规划的路线，并能轻松的查看多种路线方案，以便做出符合自己的最佳方案。对于切换公交，走路，自驾等路线方式也是只需一键操作。</p>
+<p>Native 版地图相对于 Web版地图增加更多情感化，易用的功能，如：能够记录用户的生活轨迹，记录用户的点滴足迹，能够享受躲避拥堵方案等。而Web版地图基于技术框架，很难实现以上功能，从用户体验角度来看，弱于Native版地图。   </p>
+<p>##四、小结##</p>
+<p>综述所述，在设计Web APP时，应当遵循以下几点：</p>
+<p>###1. 简化</p>
+<ul>
+<li>简化不重要的动画/动效</li>
+<li>简化复杂的图形文字样式</li>
+</ul>
+<p>###2. 少用</p>
+<ul>
+<li>少用手势，避免与浏览器手势冲突</li>
+<li>少用弹窗</li>
+</ul>
+<p>###3. 减少</p>
+<ul>
+<li>减少页面内容</li>
+<li>减少控件数量</li>
+<li>减少页面跳转次数，尽量在当前页面显示</li>
+</ul>
+<p>###4. 增强</p>
+<ul>
+<li>增强Loading时的趣味性</li>
+<li>增强页面主次关系</li>
+<li>增强控件复用性</li>
+</ul>
+<p>原文地址：<a href="http://mux.baidu.com/?p=6750" target="_blank" rel="external">mux.baidu</a></p>
+<p>作者：guowenwe</p>
   
 	</div>
 		<footer class="article-footer clearfix">
@@ -129,13 +223,13 @@
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/技术/">技术</a>
+  <a class="article-category-link" href="/categories/产品设计/">产品设计</a>
 </div>
 
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/设计原则/">设计原则</a>
+  <span></span> <a href="/tags/移动app/">移动app</a>
   </div>
 
 </div>
@@ -144,7 +238,7 @@
 
 	<div class="article-share" id="share">
 	
-	  <div data-url="http://icamille.github.io/2016/07/01/design-principles-of-web-front/" data-title="Web前端设计原则 | I,Camille" data-tsina="null" class="share clearfix">
+	  <div data-url="http://icamille.github.io/2016/08/10/webapp-vs-nativeapp/" data-title="聊聊Web App、Hybrid App与Native App的设计差异 | I,Camille" data-tsina="null" class="share clearfix">
 	  </div>
 	
 	</div>
@@ -157,19 +251,11 @@
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/07/01/markdown-url/" title="Markdown 学习资源">
-  <strong>上一篇：</strong><br/>
-  <span>
-  Markdown 学习资源</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/06/23/hello-world/"  title="Hello World">
+<a href="/2016/08/09/book-list-for-fed/"  title="前端书籍目录">
  <strong>下一篇：</strong><br/> 
- <span>Hello World
+ <span>前端书籍目录
 </span>
 </a>
 </div>
@@ -178,7 +264,7 @@
 
 	
 <section id="comments" class="comment">
-	<div class="ds-thread" data-thread-key="2016/07/01/design-principles-of-web-front/" data-title="Web前端设计原则" data-url="http://icamille.github.io/2016/07/01/design-principles-of-web-front/"></div>
+	<div class="ds-thread" data-thread-key="2016/08/10/webapp-vs-nativeapp/" data-title="聊聊Web App、Hybrid App与Native App的设计差异" data-url="http://icamille.github.io/2016/08/10/webapp-vs-nativeapp/"></div>
 </section>
 
 
@@ -188,7 +274,7 @@
   <div id="toc" class="toc-aside">
   <strong class="toc-title">文章目录</strong>
  
- <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#KISS原则（Keep-it-Simple-and-Stupid）"><span class="toc-number">1.</span> <span class="toc-text">KISS原则（Keep it Simple and Stupid）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#DRY原则（Don’t-Repeat-Yourself）"><span class="toc-number">2.</span> <span class="toc-text">DRY原则（Don’t Repeat Yourself）</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#最少知道原则。"><span class="toc-number">3.</span> <span class="toc-text">最少知道原则。</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#分治原则"><span class="toc-number">4.</span> <span class="toc-text">分治原则</span></a></li></ol>
+ <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、Web-App、Hybrid-App、Native-App-纵向对比"><span class="toc-number">1.</span> <span class="toc-text">一、Web App、Hybrid App、Native App 纵向对比</span></a></li></ol>
  
   </div>
 
