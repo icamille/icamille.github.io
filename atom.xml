@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-08-10T08:10:16.000Z</updated>
+  <updated>2016-08-12T01:27:02.000Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -14,6 +14,38 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>react学习资料相关</title>
+    <link href="http://icamille.github.io/2016/08/12/about-react/"/>
+    <id>http://icamille.github.io/2016/08/12/about-react/</id>
+    <published>2016-08-11T16:00:00.000Z</published>
+    <updated>2016-08-12T01:27:02.000Z</updated>
+    
+    <content type="html">&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://facebook.github.io/react/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;官网&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;[http://reactjs.cn&quot;&gt;中文文档地址&lt;/a&gt; &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://github.com/reactjs-cn/react-docs&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;GitHub地址&lt;/a&gt;    &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.ruanyifeng.com/blog/2015/03/react.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;React 入门实例教程–阮一峰&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://www.infoq.com/cn/articles/subversion-front-end-ui-development-framework-react&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;颠覆式前端UI开发框架：React&lt;/a&gt;     &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://wiki.jikexueyuan.com/project/react/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;极客学院整理的文档&lt;/a&gt;  &lt;/li&gt;
+&lt;/ul&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://facebook.github.io/react/&quot;&gt;官网&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;[http://reactjs.cn&quot;&gt;中文文档地址&lt;/a&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="http://icamille.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="react" scheme="http://icamille.github.io/tags/react/"/>
+    
+  </entry>
   
   <entry>
     <title>聊聊Web App、Hybrid App与Native App的设计差异</title>
