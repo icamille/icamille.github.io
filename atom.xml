@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-08-12T01:27:02.000Z</updated>
+  <updated>2016-10-26T08:28:31.015Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -14,6 +14,51 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Apache+php环境搭建</title>
+    <link href="http://icamille.github.io/2016/10/26/apache-php/"/>
+    <id>http://icamille.github.io/2016/10/26/apache-php/</id>
+    <published>2016-10-26T06:42:38.000Z</published>
+    <updated>2016-10-26T08:28:31.015Z</updated>
+    
+    <content type="html">&lt;p&gt;基于Apache+Php的前端开发环境搭建&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;一、环境及软件&quot;&gt;&lt;a href=&quot;#一、环境及软件&quot; class=&quot;headerlink&quot; title=&quot;一、环境及软件&quot;&gt;&lt;/a&gt;一、环境及软件&lt;/h3&gt;&lt;p&gt;win7/8 64.(32位的同理，下载相关软件必须是对应的32位版本)&lt;/p&gt;
+&lt;p&gt;PHP7.0.12（&lt;a href=&quot;http://windows.php.net/downloads/releases/php-7.0.12-nts-Win32-VC14-x64.zip&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;php-7.0.12-nts-Win32-VC14-x64.zip&lt;/a&gt;）&lt;/p&gt;
+&lt;p&gt;Apache2.4.23（&lt;a href=&quot;https://www.apachelounge.com/download/VC14/binaries/httpd-2.4.23-win64-VC14.zip&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;httpd-2.4.23-win64-VC14.zip&lt;/a&gt;）&lt;/p&gt;
+&lt;h3 id=&quot;二、方法-步骤&quot;&gt;&lt;a href=&quot;#二、方法-步骤&quot; class=&quot;headerlink&quot; title=&quot;二、方法/步骤&quot;&gt;&lt;/a&gt;二、方法/步骤&lt;/h3&gt;&lt;p&gt;1.安装apache前必须先安装&lt;a href=&quot;http://www.microsoft.com/en-us/download/details.aspx?id=30679&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;VC11&lt;/a&gt;，选择时选择英文版的，如果win7系统是32位的请下载VSU_4\vcredist_x32.exe（VC9是合适xp与2003系统的,VC11是合适Win7与win8系统的,VC14是合适win10系统的,所以Apache VC14能搭PHP VC11的）。&lt;/p&gt;
+&lt;p&gt;2.Apache 下载后是zip包，解压到后放在合适的位置就可以了，不建议放在C盘里，因为重装系统C盘的数据会全部丢失，这里我们将它放在F盘的phptools文件夹下的apache2.4目录下。&lt;/p&gt;
+&lt;p&gt;3.php 下载后也是zip包，同样解压到合适位置，我们这里也将其放在F盘的phptools文件夹下的php7.0.12目录下。&lt;/p&gt;
+&lt;p&gt;4.将F:\phptools\php7.0.12\php.ini-production 复制一份，并重命名为php.ini。&lt;/p&gt;
+&lt;p&gt;5.将 F:\phptools\php7.0.12和F:\phptools\php7.0.12\ext加入环境变量PATH中。&lt;/p&gt;
+&lt;p&gt;6.用记事本打开F:\phptools\Apache2.4\Apache24\conf，查找ServerRoot，修改ServerRoot “C:/Apache24” =&amp;gt; ServerRoot “F:/phptools/Apache2.4/Apache24”（这里输入的是你解压apache安装包后放的位置）。&lt;/p&gt;
+&lt;p&gt;7.查找#ServerName www.example.com:80 ，修改为 ServerName www.example.com:80 (去掉前面的#)。&lt;/p&gt;
+&lt;p&gt;8.查找DocumentRoot “c:/Apache24/htdocs” ， 修改为DocumentRoot “F:/phptools/Apache2.4/Apache24/htdocs” 。&lt;/p&gt;
+&lt;p&gt;9.查找Directory “c:/Apache24/htdocs” ，修改为 Directory “ F:/phptools/Apache2.4/Apache24/htdocs “ 。&lt;/p&gt;
+&lt;p&gt;10.查找DirectoryIndex index.html ，修改为 DirectoryIndex index.html index.php index.htm (这里我们添加了index.php index.htm)。&lt;/p&gt;
+&lt;p&gt;11.查找ScriptAlias /cgi-bin/ “c:/Apache24/cgi-bin/“  ，修改为 ScriptAlias /cgi- bin/ “ F:/phptools/Apache2.4/Apache24/cgi-bin” 。&lt;/p&gt;
+&lt;p&gt;12.查找Directory “c:/Apache24/cgi-bin” 修改为 Directory “F:/phptools/Apache2.4/Apache24/cgi-bin/“  。&lt;/p&gt;
+&lt;p&gt;13.在 F:\phptools\apache2.4.10\conf\httpd.conf最后一行添加添 加 LoadModule php7_module “F:/phptools/php7.0.12/php7apache2_4.dll” 让 apache 支持php （请确认F:/phptools/ php7.0.12/有php7apache2_4.dll，如果你下载的是我提供的连接肯定是有的）。&lt;/p&gt;
+&lt;p&gt;14.添加 AddType application/x-httpd-php .php .html .htm。&lt;/p&gt;
+&lt;p&gt;15.添加 PHPIniDir “F:/phptools/php7.0.12” （告诉apache php.ini的位置），至此，httpd.conf 配置完成，保存httpd.conf 。&lt;/p&gt;
+&lt;p&gt;16.将apache安装到系统服务中，输入F:\phptools\Apache2.4\Apache24\bin\httpd -k install，回车。&lt;/p&gt;
+&lt;p&gt;17.开启几个常用php扩展，用记事本打开F:\phptools\php7.0.12\php.ini：&lt;br&gt;        将; extension_dir = “ext”修改为 extension_dir = “ext” （去掉extension前面的分号）&lt;br&gt;        将;extension=php_mbstring.dll 修改为 extension=php_mbstring.dll（去掉extension前面的分号,这是php多字节字符串扩展）&lt;br&gt;        将;extension=php_mysql.dll修改为 extension=php_mysql.dll（去掉extension前面的分号）&lt;br&gt;        将;extension=php_mysqli.dll 修改为 extension=php_mysqli.dll（去掉extension前面的分号）。&lt;/p&gt;
+&lt;p&gt;18.双击F:\phptools\Apache2.4\Apache24\bin\ApacheMonitor.exe启动。&lt;/p&gt;
+&lt;p&gt;参考：&lt;a href=&quot;http://jingyan.baidu.com/article/154b46315242b328ca8f4101.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;php环境搭建&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;基于Apache+Php的前端开发环境搭建
+    
+    </summary>
+    
+      <category term="环境搭建" scheme="http://icamille.github.io/categories/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+    
+      <category term="环境搭建" scheme="http://icamille.github.io/tags/%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>react学习资料相关</title>
