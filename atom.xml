@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://icamille.github.io/"/>
-  <updated>2016-10-26T08:28:31.015Z</updated>
+  <updated>2016-12-09T02:56:40.837Z</updated>
   <id>http://icamille.github.io/</id>
   
   <author>
@@ -14,6 +14,46 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>上传文件域input的美化方案</title>
+    <link href="http://icamille.github.io/2016/12/08/file-upload-input/"/>
+    <id>http://icamille.github.io/2016/12/08/file-upload-input/</id>
+    <published>2016-12-08T08:02:38.000Z</published>
+    <updated>2016-12-09T02:56:40.837Z</updated>
+    
+    <content type="html">&lt;p&gt;最近工作中遇到上传图片（文件）的需求，本来想上传前本地预览，这样避免垃圾数据，因为提交表单再上传文件流，火狐下可以通过一些方法实现，但ie出现各种问题。&lt;a id=&quot;more&quot;&gt;&lt;/a&gt; &lt;/p&gt;
+&lt;p&gt;虽然有一些插件可以解决，但也涉及体验性问题等，现总结一下。&lt;/p&gt;
+&lt;h3 id=&quot;一、上传前本地预览问题&quot;&gt;&lt;a href=&quot;#一、上传前本地预览问题&quot; class=&quot;headerlink&quot; title=&quot;一、上传前本地预览问题&quot;&gt;&lt;/a&gt;一、上传前本地预览问题&lt;/h3&gt;&lt;p&gt;火狐可以通过以下&lt;a href=&quot;http://www.jq22.com/jquery-info833&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;代码&lt;/a&gt;获取图片路径：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;var docObj = document.getElementById(&amp;quot;fileInput&amp;quot;);
+//imgObjPreview.src = docObj.files[0].getAsDataURL();
+//火狐7以上版本不能用上面的getAsDataURL()方式获取，需要一下方式
+imgObjPreview.src = window.URL.createObjectURL(docObj.files[i]);   
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt; 网上搜了很多资料说IE可以通过滤镜的方式实现，但经本地测试，行不通，最终放弃上传前预览，改为实时上传使用ajaxfileupload.js插件来实现实时上传，再回显。&lt;/p&gt;
+&lt;h3 id=&quot;二、input-file-美化传遇到的问题&quot;&gt;&lt;a href=&quot;#二、input-file-美化传遇到的问题&quot; class=&quot;headerlink&quot; title=&quot;二、input file 美化传遇到的问题&quot;&gt;&lt;/a&gt;二、input file 美化传遇到的问题&lt;/h3&gt;&lt;p&gt;   因原生上传文件的input太丑，所以需要美化上传按钮，隐藏原生按钮，使用图片或其他元素代替。有以下两种方式处理：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;input file 自身隐藏(display:none),利用按钮或元素的点击事件，&lt;a href=&quot;http://blog.csdn.net/rainyjune/article/details/6877975&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;触发&lt;/a&gt;input file的click事件，弹出文件选择框，选择完文件后上传。但遇到IE下ajaxfileupload.js上传失效问题，因为处于安全性考虑，&lt;strong&gt;在ie下会报 “权限不足” 问题&lt;/strong&gt;。所以此方法行不通。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;将input设置为&lt;a href=&quot;http://www.cnblogs.com/dreamback/archive/2012/12/25/input-file-css-beautify.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;透明&lt;/a&gt;,但z-index值比图片的z-index值更大，点击底层的图片或其他元素，实际上是点击的透明的上传input按钮。但ie下会出现光标的问题。后经测试，可以通过设置&lt;strong&gt;font-size&lt;/strong&gt;把浏览文件的按钮放大，使其覆盖整个图片或者点击的元素。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt; 参考文章：&lt;/p&gt;
+&lt;p&gt;  &lt;a href=&quot;http://www.jq22.com/jquery-info833&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;多图片上传预览（纯前端）&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;  &lt;a href=&quot;http://www.cnblogs.com/dreamback/archive/2012/12/25/input-file-css-beautify.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;input file 美化&lt;/a&gt;&lt;/p&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近工作中遇到上传图片（文件）的需求，本来想上传前本地预览，这样避免垃圾数据，因为提交表单再上传文件流，火狐下可以通过一些方法实现，但ie出现各种问题。
+    
+    </summary>
+    
+      <category term="技术" scheme="http://icamille.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="前端积累" scheme="http://icamille.github.io/tags/%E5%89%8D%E7%AB%AF%E7%A7%AF%E7%B4%AF/"/>
+    
+  </entry>
   
   <entry>
     <title>Apache+php环境搭建</title>
